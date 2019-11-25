@@ -142,10 +142,6 @@ a:hover {
     text-decoration: none;
 }
 
-.header-middle {
-    padding: 15px 0 0 0;
-}
-
 .header-middle__logo {
     width: 248px;
 }
@@ -154,7 +150,7 @@ a:hover {
     color: #e32913;
     font-size: 14px;
     text-decoration: none;
-    padding: 10px;
+    padding: 35px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,8 +186,8 @@ a:hover {
     box-shadow: 0px 14px 60px -26px rgba(0, 0, 0, 0.75);
     background: #ffffff;
     width: 500px;
-    top: 96px;
-    right: 0;
+    top: 102px;
+    right: 10px;
     padding: 20px 0;
     z-index: 10;
     display: none;
@@ -310,7 +306,6 @@ a:hover {
 
 .header-bottom {
     border-top: 1px solid #cccccc;
-    margin-top: 10px;
 }
 
 .header-bottom__menu {
@@ -671,48 +666,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.price-filter-item summary::-webkit-details-marker {
-    display: none;
-}
-
-.price-filter-item summary::after {
-    position: absolute;
-    content: "";
-    background-image: url("../images/arrow-black.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 15px;
-    height: 10px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.price-filter-item summary:hover::after {
-    background-image: url("../images/arrow-red-down.svg");
-}
-
-.price-filter-item summary {
-    font-size: 18px;
-    position: relative;
-    outline-color: transparent;
-    cursor: pointer;
-    padding: 20px 0;
-    border-bottom: 1px solid #d8d8d8;
-}
-
-.price-filter-item[open] summary {
-    border-bottom: 0;
-}
-
-.price-filter-item[open] summary::after {
-    transform: rotate(180deg);
-}
-
-.price-filter-item summary:focus {
-    color: #e95a0c;
 }
 
 .product-slider {
