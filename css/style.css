@@ -680,15 +680,39 @@ a:hover {
 .price-filter-item summary::after {
     position: absolute;
     content: "";
-    background: #333;
-    width: 20px;
-    height: 20px;
+    background-image: url("../images/arrow-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 10px;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price-filter-item summary:hover::after {
+    background-image: url("../images/arrow-red-down.svg");
 }
 
 .price-filter-item summary {
     font-size: 18px;
     position: relative;
+    outline-color: transparent;
+    cursor: pointer;
+    padding: 20px 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.price-filter-item[open] summary {
+    border-bottom: 0;
+}
+
+.price-filter-item[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.price-filter-item summary:focus {
+    color: #e95a0c;
 }
 
 .product-slider {
