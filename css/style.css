@@ -103,14 +103,14 @@ a:hover {
 /* Header */
 
 .header-top {
-    background: #808080;
-    color: #fff;
+    background: #e6e6e6;
+    color: #444444;
     padding: 10px 0;
     font-size: 14px;
 }
 
 .header-top__city {
-    color: #ffffff;
+    color: #444444;
     text-decoration: none;
     position: relative;
     padding-left: 25px;
@@ -137,7 +137,7 @@ a:hover {
 }
 
 .header-top__link {
-    color: #ffffff;
+    color: #444444;
     font-weight: bold;
     text-decoration: none;
 }
@@ -323,24 +323,28 @@ a:hover {
     position: relative;
     display: block;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 14px;
     padding: 15px 0 15px 0;
     margin-right: 25px;
+    background: #e95a0c;
+    border-radius: 3px;
+    transition: all 0.25s ease;
 }
 
 .catalog-button:hover {
-    color: #ea5a0c;
+    color: #ffffff;
+    background: #f56618;
 }
 
 .catalog-button::before {
     content: "";
     position: absolute;
-    background-image: url("../images/yellow-hamburger.svg");
+    background-image: url("../images/arrow-orange.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 17px;
-    height: 17px;
+    height: 10px;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
@@ -353,7 +357,7 @@ a:hover {
 .header-bottom__menu a {
     display: block;
     text-decoration: none;
-    color: #000000;
+    color: #444444;
     font-size: 14px;
     padding: 15px 0;
 }

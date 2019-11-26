@@ -1,8 +1,8 @@
 /* Каталог товаров */
 
-.categore-header {
+.category-header {
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .filter-item-text {
@@ -95,13 +95,16 @@
     color: #ea5a0c;
     width: 129px;
     text-decoration: none;
-    padding: 20px 0 0 40px;
+    padding: 0 0 0 35px;
     position: relative;
+    margin-top: 20px;
 }
 
 .price-filter-showmore::before {
     content: "";
-    background-color: #dedede;
+    background-image: url("../images/plus-orange.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -133,12 +136,11 @@
 }
 
 .filter-item-btn:hover {
-    background-color: #9b9b9b;
+    background-color: #bfbfbf;
     color: #ffffff;
 }
 
 .filter-item-btn:hover span {
-    background-color: #9b9b9b;
     color: #ffffff;
 }
 
@@ -259,22 +261,44 @@
 
 .price-groups {
     list-style: none;
-    column-width: 220px;
-    column-gap: 10px;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
-.price-groups a {
+.price-group-item {
     text-decoration: none;
-    color: #e95a0c;
+    color: #444444;
     transition: all 0.25s ease;
     position: relative;
     display: block;
-    padding: 5px;
+    padding: 10px;
+    background: #e6e6e6;
+    margin: 10px;
+    border-radius: 5px;
 }
 
-.price-groups a:hover {
-    color: #e20714;
+.price-sorting-wrapper {
+    display: flex;
+    padding: 0 10px 0 10px;
+}
+
+.price-sorting-filter {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #8f2020;
+    margin-left: auto;
+}
+
+.price-sorting-selector {
+    display: none;
+}
+
+.price-group-item:hover {
+    color: #ffffff;
+    background: #f56618;
 }
 
 .price-sorting-block {
@@ -284,13 +308,18 @@
     padding: 0;
     padding-top: 20px;
     flex-wrap: wrap;
+    margin-top: 0;
 }
 
-.price-sorting-block li {
+.price-sorting-selector {
+    border: 1px solid #dedede;
+}
+
+.sorting-block-item {
     padding: 5px 0;
 }
 
-.price-sorting-block a {
+.sorting-block-url {
     color: #ea5a0c;
     padding-left: 30px;
     padding-right: 20px;
@@ -298,11 +327,11 @@
     text-decoration: none;
 }
 
-.price-sorting-block a:hover {
+.sorting-block-url:hover {
     color: #e20714;
 }
 
-.price-sorting-block a::after {
+.sorting-block-url::after {
     position: absolute;
     content: "";
     background-image: url("../images/sorting.svg");
