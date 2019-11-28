@@ -252,6 +252,17 @@
     min-width: 250px;
 }
 
+.price-item:hover {
+    border-color: #e20714;
+}
+
+.price-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
 .price-item-cart-block {
     display: flex;
     justify-content: space-between;
@@ -352,13 +363,6 @@
     top: 50%;
     transform: translateY(-40%);
     right: 0;
-}
-
-.price-item-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
 }
 
 .price-extra-info {
