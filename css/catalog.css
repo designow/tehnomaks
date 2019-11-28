@@ -289,13 +289,17 @@
 }
 
 .price-sorting-filter {
-    background-image: url("../images/filters-white.svg");
+    background-image: url(../images/filters-white.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    padding: 10px;
     display: block;
-    width: 30px;
-    height: 30px;
-    background-color: #8f2020;
+    width: 25px;
+    height: 25px;
+    background-color: #e95a0c;
     margin-left: auto;
+    border-radius: 3px;
 }
 
 .price-sorting-selector {
