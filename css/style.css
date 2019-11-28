@@ -425,8 +425,12 @@ a:hover {
     width: calc(100% - 75px);
 }
 
-.header-search-block button[type=submit] {
-    background: #ea5a0c;
+.header-search-submit {
+    background-color: #ea5a0c;
+    background-image: url("../images/magnifier.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 44%;
     height: 40px;
     width: 47px;
     border-radius: 8px;
@@ -435,8 +439,8 @@ a:hover {
     cursor: pointer;
 }
 
-.header-search-block button[type=submit]:hover {
-    background: #f6a600;
+.header-search-submit:hover {
+    background-color: #f6a600;
 }
 
 .header-search-close {
@@ -447,6 +451,8 @@ a:hover {
     width: 20px;
     height: 20px;
     right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
 }
 
