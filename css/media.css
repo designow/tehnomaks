@@ -59,6 +59,9 @@
         display: block;
         text-align: center;
     }
+    .price-sorting-filter {
+        display: block;
+    }
 }
 
 

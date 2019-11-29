@@ -1,0 +1,21 @@
+.flex-wrapper {
+    display: flex;
+}
+
+.product-images-list {
+    display: flex;
+}
+
+.product-images-list__items {
+    display: flex;
+}
+
+.product-price-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    min-width: 353px;
+    align-self: flex-start;
+    align-items: center;
+    padding: 20px;
+}
