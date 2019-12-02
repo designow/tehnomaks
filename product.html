@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Техномкс - страница каталога</title>
+    <title>Техномакс - страница товара</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
@@ -121,70 +121,331 @@
                 <li><a href="#">Xiaomi Mi Mix</a></li>
             </ul>
             <h1 class="category-header">Xiaomi Mi Mix</h1>
+            <!-- Блок с изображением и ценой -->
             <div class="flex-wrapper">
                 <div class="product-images-block">
-                    <img src="./images/content/1569838094_1.jpg" alt="" class="product-images-block__image">
+                    <img src="./images/content/1569838094_1.jpg" width="350" class="product-images-block__image" alt="">
 
                     <div class="product-images-list">
-                        <button class="product-images-list__btn">Пролистать товары в лево</button>
-                        <ul class="product-images-list__items">
-                            <li class="product-images-list__item"><img src="./images/content/1569838094_2.jpg" alt="" class="product-images-list__img"></li>
-                            <li class="product-images-list__item"><img src="./images/content/1569838094_3.jpg" alt="" class="product-images-list__img"></li>
-                            <li class="product-images-list__item"><img src="./images/content/1569838094_3.jpg" alt="" class="product-images-list__img"></li>
-                        </ul>
-                        <button class="product-images-list__btn">Пролистать товары в право</button>
+                        <button class="product-images-list__btn" aria-label="Пролистать фотографии"></button>
+                        <div class="product-images-list__items">
+
+                            <a href="#" class="product-images-list__item"><img src="./images/content/1569838094_2.jpg" alt="" class="product-images-list__img"></a>
+
+                            <a href="#" class="product-images-list__item">
+                                <img src="./images/content/1569838094_3.jpg" alt="" class="product-images-list__img">
+                            </a>
+
+
+                            <a href="#" class="product-images-list__item">
+                                <img src="./images/content/1569838094_3.jpg" alt="" class="product-images-list__img">
+                            </a>
+
+                        </div>
+                        <button class="product-images-list__btn product-images-list__btn--right" aria-label="Пролистать фотографии"></button>
                     </div>
                 </div>
                 <div class="product-short-description-block">
-                    <table>
+                    <table class="product-short-propertys">
                         <tr>
-                            <td>Модель</td>
-                            <td>MiMix 3</td>
+                            <td class="product-short-propertys__property">Модель</td>
+                            <td class="product-short-propertys__value">MiMix 3</td>
                         </tr>
                         <tr>
-                            <td>Год релиза</td>
-                            <td>2018</td>
+                            <td class="product-short-propertys__property">Год релиза</td>
+                            <td class="product-short-propertys__value">2018</td>
                         </tr>
                         <tr>
-                            <td>Цвет задней панели</td>
-                            <td>черный оникс</td>
+                            <td class="product-short-propertys__property">Цвет задней панели</td>
+                            <td class="product-short-propertys__value">черный оникс</td>
                         </tr>
                         <tr>
-                            <td>Материал корпуса</td>
-                            <td>металл</td>
+                            <td class="product-short-propertys__property">Материал корпуса</td>
+                            <td class="product-short-propertys__value">металл</td>
                         </tr>
                         <tr>
-                            <td>Диагональ экрана</td>
-                            <td>6.39"</td>
+                            <td class="product-short-propertys__property">Диагональ экрана</td>
+                            <td class="product-short-propertys__value">6.39"</td>
                         </tr>
                         <tr>
-                            <td>Разрешение экрана</td>
-                            <td>2340 х 1080</td>
+                            <td class="product-short-propertys__property">Разрешение экрана</td>
+                            <td class="product-short-propertys__value">2340 х 1080</td>
                         </tr>
                         <tr>
-                            <td>Технология изготовления экрана</td>
-                            <td>SuperAMOLED</td>
+                            <td class="product-short-propertys__property">Технология изготовления экрана</td>
+                            <td class="product-short-propertys__value">SuperAMOLED</td>
                         </tr>
                         <tr>
-                            <td>Поддержка сетей 4G (LTE)</td>
-                            <td>есть</td>
+                            <td class="product-short-propertys__property">Поддержка сетей 4G (LTE)</td>
+                            <td class="product-short-propertys__value">есть</td>
                         </tr>
                     </table>
-                    <a href="#">Все характеристики</a>
+                    <a href="#" class="product-short-description-block__showall">Все характеристики</a>
                 </div>
                 <div class="product-price-block">
                     <span class="product-price-block__articul">Артикул: 347548</span>
                     <span class="product-price-block__articul">Код: OXD - 347548</span>
-                    <div class="product-price-block__price">25 695 <span class="product-price-block__rubles">₽<sup>*</sup></span></div>
+                    <div class="product-price">25 695 <span class="product-price__rubles">₽<sup>*</sup></span></div>
                     <span class="product-price-block__memo">Цена при оплате картой или в кредит</span>
 
-                    <div class="product-price-block__price product-price-block__price--grey">25 695 <span class="product-price-block__rubles">₽</span></div>
-                    <a href="#" class="product-price-block__buy">Купить</a>
+                    <div class="product-price product-price--grey">25 695 <span class="product-price-block__rubles">₽</span></div>
+                    <a href="#" class="button-buy">Купить</a>
                     <a href="#" class="product-price-block__buy-fast">Купить в 2 клика</a>
-                    <a href="#" class="product-price-block__warehouse">В наличии</a>
+                    <div class="product-price-block__wrapper">
+                        <a href="#" class="product-price-block__warehouse">В наличии</a>
+                    </div>
                     <span class="product-price-block__delivery">Доставка: 250 р.</span>
                 </div>
             </div>
+            <!-- /Блок с изображением и ценой -->
+            <ul class="tab-items tab-items--left">
+                <li class="tab-items__active"><a href="#" class="tab-items__url">Характеристики</a></li>
+                <li><a href="#" class="tab-items__url">Отзывы</a></li>
+            </ul>
+            <table class="product-description-table">
+                <tr>
+                    <td class="product-description-table__cell">Модель:</td>
+                    <td class="product-description-table__cell">Redmi 6A</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Год релиза:</td>
+                    <td class="product-description-table__cell">2018</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Цвет задней панели:</td>
+                    <td class="product-description-table__cell">черный</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Цвет передней панели:</td>
+                    <td class="product-description-table__cell">черный</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Материал корпуса:</td>
+                    <td class="product-description-table__cell">пластик</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Диагональ экрана:</td>
+                    <td class="product-description-table__cell">5.45"</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Разрешение экрана:</td>
+                    <td class="product-description-table__cell">1440 x 720</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Технология изготовления экрана:</td>
+                    <td class="product-description-table__cell">IPS</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Поддержка сетей 4G (LTE):</td>
+                    <td class="product-description-table__cell">есть</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Количество SIM-карт:</td>
+                    <td class="product-description-table__cell">2 SIM</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Формат SIM-карт:</td>
+                    <td class="product-description-table__cell">nano SIM</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Стандарт WiFi:</td>
+                    <td class="product-description-table__cell">Wi-Fi 802.11 b/g/n</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Операционная система:</td>
+                    <td class="product-description-table__cell">Android 8.1</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Производитель процессора:</td>
+                    <td class="product-description-table__cell">MediaTek</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Модель процессора:</td>
+                    <td class="product-description-table__cell">Helio A22</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Количество ядер:</td>
+                    <td class="product-description-table__cell">4 ядра</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Частота работы процессора:</td>
+                    <td class="product-description-table__cell">2.0 Ггц</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Объем оперативной памяти:</td>
+                    <td class="product-description-table__cell">2 Гб</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Объем встроенной памяти:</td>
+                    <td class="product-description-table__cell">32 Гб</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Слот для карты памяти, тип:</td>
+                    <td class="product-description-table__cell">слот microSD (совмещен со слотом для второй SIM-карты)</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Максимальный объем карты памяти:</td>
+                    <td class="product-description-table__cell">до 256 Гб</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Датчики:</td>
+                    <td class="product-description-table__cell">гироскоп, датчик освещенности, датчик приближения</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Сканер отпечатка пальцев:</td>
+                    <td class="product-description-table__cell">нет</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Количество мегапикселей основной камеры:</td>
+                    <td class="product-description-table__cell">13 мегапикселей</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Диафрагма:</td>
+                    <td class="product-description-table__cell">f/2.2</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Встроенная вспышка, тип:</td>
+                    <td class="product-description-table__cell">есть, светодиодная</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Количество мегапикселей фронтальной камеры:</td>
+                    <td class="product-description-table__cell">5 мегапикселей</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Максимальное разрешение при видеосъемке:</td>
+                    <td class="product-description-table__cell">1920 x 1080</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Количество кадров/с при видеосъемке:</td>
+                    <td class="product-description-table__cell">30 кадров/с</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Стандарт Bluetooth:</td>
+                    <td class="product-description-table__cell">Bluetooth 4.2</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Поддержка NFC:</td>
+                    <td class="product-description-table__cell">нет поддержки NFC</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Поддержка технологии бесконтактной оплаты:</td>
+                    <td class="product-description-table__cell">нет</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Навигация:</td>
+                    <td class="product-description-table__cell">GPS, ГЛОНАСС, BeiDou, A-GPS</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Разъем для зарядки и синхронизации:</td>
+                    <td class="product-description-table__cell">microUSB</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Разъем для наушников:</td>
+                    <td class="product-description-table__cell">mini jack 3.5 мм</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Тип аккумулятора:</td>
+                    <td class="product-description-table__cell">Li-Pol</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell"> Емкость аккумулятора:</td>
+                    <td class="product-description-table__cell">3000 мАч</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Ширина:</td>
+                    <td class="product-description-table__cell">71.5 мм</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Высота:</td>
+                    <td class="product-description-table__cell">147.5 мм</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell">Толщина:</td>
+                    <td class="product-description-table__cell">8.3 мм</td>
+                </tr>
+                <tr>
+                    <td class="product-description-table__cell product-description-table__cell--last">Вес:</td>
+                    <td class="product-description-table__cell product-description-table__cell--last">146 гр</td>
+                </tr>
+            </table>
+            <ul class="tab-items tab-items--left tab-items--bottom">
+                <li class="tab-items__active tab-items__active--bottom"><a href="#" class="tab-items__url">Характеристики</a></li>
+                <li><a href="#" class="tab-items__url">Отзывы</a></li>
+            </ul>
+
+            <ul class="advantages">
+                <li class="advantages__item advantages__item--warranty">Гибкая гарантия</li>
+                <li class="advantages__item advantages__item--delivery">Удобная доставка</li>
+                <li class="advantages__item advantages__item--2weeks">2 недели на пробу</li>
+                <li class="advantages__item advantages__item--original advantages__item--last">Только оригинал</li>
+            </ul>
+
+            <ul class="tab-items">
+                <li class="tab-items__active"><a href="#" class="tab-items__url">Похожие товары</a></li>
+                <li><a href="#" class="tab-items__url">Распродажа</a></li>
+            </ul>
+            <div class="product-slider">
+                <a href="#" class="product-slider-arrow product-slider-arrow--left"></a>
+                <a href="#" class="product-slider-arrow product-slider-arrow--right"></a>
+                <div class="product-card">
+                    <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
+                    <a href="#" class="product-card-title">Apple Watch Series</a>
+                    <div class="product-card-price">
+                        <span>27 595 ₽</span>
+                        <a href="#" class="product-card-cart"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
+                    <a href="#" class="product-card-title">Apple Watch Series</a>
+                    <div class="product-card-price">
+                        <span>27 595 ₽</span>
+                        <a href="#" class="product-card-cart"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
+                    <a href="#" class="product-card-title">Apple Watch Series</a>
+                    <div class="product-card-price">
+                        <span>27 595 ₽</span>
+                        <a href="#" class="product-card-cart"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
+                    <a href="#" class="product-card-title">Apple Watch Series</a>
+                    <div class="product-card-price">
+                        <span>27 595 ₽</span>
+                        <a href="#" class="product-card-cart"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
+                    <a href="#" class="product-card-title">Apple Watch Series</a>
+                    <div class="product-card-price">
+                        <span>27 595 ₽</span>
+                        <a href="#" class="product-card-cart"></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
+                    <a href="#" class="product-card-title">Apple Watch Series</a>
+                    <div class="product-card-price">
+                        <span>27 595 ₽</span>
+                        <a href="#" class="product-card-cart"></a>
+                    </div>
+                </div>
+            </div>
+            <section class="product-bottom-block">
+                <img src="./images/content/1569838094_1.jpg" width="150">
+                <header>
+                    <h3 class="product-bottom-block__subheader">Xiaomi Redmi 7 и Redmi 7A</h3>
+                    <h2 class="product-bottom-block__header">Смартфон Xiaomi Redmi 7A 2/16Gb Matte Blue</h2>
+                </header>
+                <div class="product-bottom-block__price">
+                    <div class="product-price">25 695 <span class="product-price__rubles">₽<sup>*</sup></span></div>
+                    <a href="#" class="button-buy">Купить</a></div>
+            </section>
         </div>
         <!-- Подписка на рассылку -->
         <div class="orange-background">

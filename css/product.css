@@ -1,5 +1,12 @@
 .flex-wrapper {
     display: flex;
+    justify-content: space-between;
+}
+
+.product-images-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-images-list {
@@ -8,6 +15,24 @@
 
 .product-images-list__items {
     display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.product-images-list__item {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.product-images-list__item:hover {
+    border-color: #e20714;
+}
+
+.product-images-list__img {
+    width: 65px;
 }
 
 .product-price-block {
@@ -18,4 +43,210 @@
     align-self: flex-start;
     align-items: center;
     padding: 20px;
+}
+
+.product-short-propertys {
+    width: 300px;
+}
+
+.product-short-propertys__property {
+    color: #9b9b9b;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.product-short-propertys__value {
+    font-size: 14px;
+}
+
+.product-images-list__btn {
+    background-image: url("../images/arrow_mini_slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    cursor: pointer;
+}
+
+.product-images-list__btn:hover {
+    background-size: 45%;
+}
+
+.product-images-list__btn--right {
+    background-image: url("../images/arrow_mini_slider_right.svg");
+}
+
+.product-short-description-block__showall {
+    display: block;
+    color: #e95a0c;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.product-price-block__articul {
+    color: #9b9b9b;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.product-price {
+    color: #1b1303;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.product-price--grey {
+    color: #838383;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.product-price__rubles {
+    font-size: 18px;
+}
+
+.product-price-block__memo {
+    font-size: 14px;
+    color: #9b9b9b;
+    padding-top: 15px;
+}
+
+.button-buy {
+    background-image: url(../images/btn_d.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.button-buy:hover {
+    background-image: url(../images/btn_h.svg);
+    color: #ffffff;
+}
+
+.product-price-block__buy-fast {
+    color: #e95a0c;
+    margin-top: 20px;
+}
+
+.product-price-block__warehouse {
+    color: #e95a0c;
+    text-decoration: none;
+}
+
+.product-price-block__delivery {
+    color: #9b9b9b;
+}
+
+.product-price-block__wrapper {
+    padding: 15px 0;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.product-description-table {
+    border-collapse: collapse;
+    border: 0px;
+    width: 100%;
+}
+
+.product-description-table__cell {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.product-description-table__cell--last {
+    border-bottom: 0;
+}
+
+.product-bottom-block {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+    border: solid 1px #d8d8d8;
+    border-radius: 10px;
+    margin: 30px 0 40px 0;
+}
+
+.product-bottom-block__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-bottom-block__subheader {
+    font-size: 17px;
+    color: #818182;
+}
+
+.product-bottom-block__header {
+    font-size: 27px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.advantages__item {
+    text-align: center;
+    padding-top: 150px;
+    width: 25%;
+    font-size: 24px;
+    position: relative;
+}
+
+.advantages__item::after {
+    content: "";
+    background: #dedede;
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.advantages__item--last::after {
+    background: transparent;
+    width: 0;
+    height: 0;
+}
+
+.advantages__item--warranty {
+    background-image: url("../images/garanty.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__item--delivery {
+    background-image: url("../images/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__item--2weeks {
+    background-image: url("../images/proba.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__item--original {
+    background-image: url("../images/original.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
