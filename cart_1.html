@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Техномкс - новая верстка</title>
+    <title>Техномакс - страница товара</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -89,7 +89,7 @@
                     </ul>
                     <a href="#" class="header-bottom-menu-more"><img src="./images/yellow-hamburger.svg" width="17" alt="Меню"></a>
                 </div>
-                <div class="catalog-block">
+                <div class="catalog-block" style="display: none;">
                     <ul class="catalog-list">
                         <li><a href="#">Компьютеры</a></li>
                         <li><a href="#">Планшеты, ноутбуки, компьютеры</a></li>
@@ -110,156 +110,75 @@
         </div>
     </header>
     <main class="content">
-        <!-- Баннерный блок -->
         <div class="container">
-            <div class="banner-block">
-                <div class="banner-block__slider"></div>
-                <div class="banner-block__aside">
-                    <a href="#" class="aside-item"><img src="./images/slider/item-1.jpg" alt=""></a>
-                    <a href="#" class="aside-item"><img src="./images/slider/item-2.jpg" alt=""></a>
-                    <a href="#" class="aside-item"><img src="./images/slider/item-3.jpg" alt=""></a>
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Смартфоны</a></li>
+                <li><a href="#">Моя корзина</a></li>
+            </ul>
+            <h1 class="page-header">Моя корзина</h1>
+            <div class="cart-block">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <figure class="cart-item__image">
+                            <img src="./images/content/1562479459_1.png" alt="">
+                        </figure>
+                        <div class="cart-item__description">
+                            <span class="cart-item__category">Xiaomi Redmi 7 и Redmi 7A</span>
+                            <a class="cart-item__title">Смартфон Xiaomi Redmi 7A</a>
+                            <span class="cart-item__articul">Артикул: 296414</span>
+                            <span class="cart-item__available">Наличие: в наличии</span>
+                        </div>
+                        <div class="cart-item__counter"><a href="#">-</a> <span>2</span> <a href="#">+</a></div>
+                        <div class="cart-item__price">5 195 <span class="ruble">₽</span></div>
+                        <a href="#" class="cart-item__delete">X</a>
+                    </div>
+                    <div class="cart-item">
+                        <figure class="cart-item__image">
+                            <img src="./images/content/1562479459_1.png" alt="">
+                        </figure>
+                        <div class="cart-item__description">
+                            <span class="cart-item__category">Xiaomi Redmi 7 и Redmi 7A</span>
+                            <a class="cart-item__title">Смартфон Xiaomi Redmi 7A</a>
+                            <span class="cart-item__articul">Артикул: 296414</span>
+                            <span class="cart-item__available">Наличие: в наличии</span>
+                        </div>
+                        <div class="cart-item__counter"><a href="#">-</a> <span>2</span> <a href="#">+</a></div>
+                        <div class="cart-item__price">5 195 <span class="ruble">₽</span></div>
+                        <a href="#" class="cart-item__delete">X</a>
+                    </div>
+                    <div class="cart-item">
+                        <figure class="cart-item__image">
+                            <img src="./images/content/1562479459_1.png" alt="">
+                        </figure>
+                        <div class="cart-item__description">
+                            <span class="cart-item__category">Xiaomi Redmi 7 и Redmi 7A</span>
+                            <a class="cart-item__title">Смартфон Xiaomi Redmi 7A</a>
+                            <span class="cart-item__articul">Артикул: 296414</span>
+                            <span class="cart-item__available">Наличие: в наличии</span>
+                        </div>
+                        <div class="cart-item__counter"><a href="#">-</a> <span>2</span> <a href="#">+</a></div>
+                        <div class="cart-item__price">5 195 <span class="ruble">₽</span></div>
+                        <a href="#" class="cart-item__delete">X</a>
+                    </div>
+                </div>
+                <div class="cart-summary-block">
+                    <span>К оплате</span>
+                    <span class="cart-summary-block__price">5 195 <span class="ruble">₽</span></span>
+                    <a href="#" class="cart-summary-block__btn">Оформить заказ</a>
+                    <a href="#" class="cart-summary-block__credit">Оформить в кредит или рассрочку</a>
                 </div>
             </div>
+            <!-- Наши преимущества -->
+            <ul class="advantages">
+                <li class="advantages__item advantages__item--warranty">Гибкая гарантия</li>
+                <li class="advantages__item advantages__item--delivery">Удобная доставка</li>
+                <li class="advantages__item advantages__item--2weeks">2 недели на пробу</li>
+                <li class="advantages__item advantages__item--original advantages__item--last">Только оригинал</li>
+            </ul>
+            <!-- /Наши преимущества -->
         </div>
-        <!-- /Баннерный блок -->
-        <!-- Баннерный блок -->
-        <div class="container">
-            <div class="brand-block">
-                <ul class="brand-list">
-                    <li><a href="#">Asus</a></li>
-                    <li><a href="#">Apple</a></li>
-                    <li><a href="#">Xiaomi</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Honor</a></li>
-                    <li><a href="#">Huawei</a></li>
-                </ul>
-                <a href="#"><img src="./images/slider-horizontal/trade-in.jpg" alt="" class="brands-block-banner"></a>
-            </div>
-        </div>
-        <!-- /Баннерный блок -->
-        <!-- Новинки и распродажа -->
-        <div class="container">
-            <section class="sales-block">
-                <h2 class="visually-hidden">Новинки и распродажа</h2>
-                <ul class="tab-items">
-                    <li class="tab-items__active"><a href="#" class="tab-items__url">Новинки</a></li>
-                    <li><a href="#" class="tab-items__url">Распродажа</a></li>
-                </ul>
-                <div class="product-slider">
-                    <a href="#" class="product-slider-arrow product-slider-arrow--left"></a>
-                    <a href="#" class="product-slider-arrow product-slider-arrow--right"></a>
-                    <div class="product-card">
-                        <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
-                        <a href="#" class="product-card-title">Apple Watch Series</a>
-                        <div class="product-card-price">
-                            <span>27 595 ₽</span>
-                            <a href="#" class="product-card-cart"></a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
-                        <a href="#" class="product-card-title">Apple Watch Series</a>
-                        <div class="product-card-price">
-                            <span>27 595 ₽</span>
-                            <a href="#" class="product-card-cart"></a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
-                        <a href="#" class="product-card-title">Apple Watch Series</a>
-                        <div class="product-card-price">
-                            <span>27 595 ₽</span>
-                            <a href="#" class="product-card-cart"></a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
-                        <a href="#" class="product-card-title">Apple Watch Series</a>
-                        <div class="product-card-price">
-                            <span>27 595 ₽</span>
-                            <a href="#" class="product-card-cart"></a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
-                        <a href="#" class="product-card-title">Apple Watch Series</a>
-                        <div class="product-card-price">
-                            <span>27 595 ₽</span>
-                            <a href="#" class="product-card-cart"></a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card-image"><img src="images/content/watch.jpg" alt=""></div>
-                        <a href="#" class="product-card-title">Apple Watch Series</a>
-                        <div class="product-card-price">
-                            <span>27 595 ₽</span>
-                            <a href="#" class="product-card-cart"></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- /Новинки и распродажа -->
-        <!-- Новости -->
-        <div class="container">
-            <section class="news-block">
-                <h2 class="visually-hidden">Новости</h2>
-                <div class="article-intro">
-                    <div class="article-intro-img"></div>
-                    <div class="article-intro-property">
-                        <span class="article-intro-date">30.10.2019</span>
-                        <span class="article-intro-view">10</span>
-                    </div>
-                    <a href="#" class="article-intro-title">Тотальная распродажа б/у смартфонов</a>
-                </div>
-                <div class="article-intro">
-                    <div class="article-intro-img"></div>
-                    <div class="article-intro-property">
-                        <span class="article-intro-date">30.10.2019</span>
-                        <span class="article-intro-view">10</span>
-                    </div>
-                    <a href="#" class="article-intro-title">Тотальная распродажа б/у смартфонов</a>
-                </div>
-                <div class="article-intro">
-                    <div class="article-intro-img"></div>
-                    <div class="article-intro-property">
-                        <span class="article-intro-date">30.10.2019</span>
-                        <span class="article-intro-view">10</span>
-                    </div>
-                    <a href="#" class="article-intro-title">Тотальная распродажа б/у смартфонов</a>
-                </div>
-                <div class="article-intro">
-                    <div class="article-intro-img"></div>
-                    <div class="article-intro-property">
-                        <span class="article-intro-date">30.10.2019</span>
-                        <span class="article-intro-view">10</span>
-                    </div>
-                    <a href="#" class="article-intro-title">Тотальная распродажа б/у смартфонов</a>
-                </div>
-            </section>
-        </div>
-        <!-- /Новости -->
-        <!-- Социальные сети и список новостей -->
-        <div class="container">
-            <div class="social-block">
-                <div class="social-list">
-                    <img src="./images/content/social.jpg" alt="">
-                </div>
-                <div class="newslist-block">
-                    <h2>Новости</h2>
-                    <ul class="newslist">
-                        <li><a href="#">4 преимущества трейд-ин в Техномаксе</a></li>
-                        <li><a href="#">Майская распродажа в Техномаксе</a></li>
-                        <li><a href="#">Майская распродажа</a></li>
-                        <li><a href="#">Ноутбуки</a></li>
-                        <li><a href="#">Скидка 5%</a></li>
-                        <li><a href="#">Черная пятница</a></li>
-                    </ul>
-                    <a href="#" class="newslist-url">Лента новостей</a>
-                </div>
-            </div>
-        </div>
-        <!-- /Социальные сети и список новостей -->
+        <!-- Подписка на рассылку -->
         <div class="orange-background">
             <div class="container">
                 <div class="feedback-block">
@@ -279,6 +198,8 @@
                 </div>
             </div>
         </div>
+        <!-- /Подписка на рассылку -->
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -372,4 +293,4 @@
     </footer>
 </body>
 
-</html>
+</html>.
