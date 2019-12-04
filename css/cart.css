@@ -71,6 +71,7 @@
                 color: #333;
                 font-size: 18px;
                 padding: 0 0 10px 0;
+                text-decoration: none;
             }
             
             .cart-item__articul,
@@ -82,8 +83,18 @@
             
             .cart-item__delete {
                 position: absolute;
+                display: block;
+                background-image: url('../images/close-no-active.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
                 right: 0;
-                top: 0;
+                top: 10px;
+                width: 20px;
+                height: 20px;
+            }
+            
+            .cart-item__delete:hover {
+                background-image: url('../images/close-active.svg');
             }
             
             .cart-summary-block__price {
@@ -103,8 +114,61 @@
                 font-size: 22px;
             }
             
+            .cart-summary-block__btn:hover {
+                color: #ffffff;
+                background-image: url('../images/btn_long_orange.svg');
+            }
+            
             .cart-summary-block__credit {
                 padding: 20px 0;
                 color: #e95a0c;
                 font-size: 16px;
+            }
+            
+            .cart-item__counter {
+                display: flex;
+            }
+            
+            .cart-item__count {
+                font-size: 19px;
+            }
+            
+            .cart-item__plus,
+            .cart-item__minus {
+                display: block;
+                border: 1px solid #dedede;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+            }
+            
+            .cart-item__plus:hover,
+            .cart-item__minus:hover {
+                border: 1px solid #e95a0c;
+            }
+            
+            .cart-item__plus {
+                margin-left: 10px;
+            }
+            
+            .cart-item__minus {
+                margin-right: 10px;
+            }
+            
+            .cart-item__warrantys {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            
+            .cart-item__warranty {
+                display: block;
+                font-size: 12px;
+                color: #e95a0c;
+                padding: 5px 0;
             }
