@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .product-images-list {
@@ -39,7 +40,7 @@
     display: flex;
     flex-direction: column;
     background-color: #f3f3f3;
-    min-width: 353px;
+    min-width: 320px;
     align-self: flex-start;
     align-items: center;
     padding: 20px;
@@ -249,4 +250,8 @@
     background-image: url("../images/original.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.tab-items--mtop {
+    margin-top: 20px;
 }

@@ -87,7 +87,7 @@
                         <li><a href="#">Бонусная система</a></li>
                         <li><a href="#">Покупка в кредит</a></li>
                     </ul>
-                    <a href="#" class="header-bottom-menu-more"><img src="./images/yellow-hamburger.svg" width="17" alt="Меню"></a>
+                    <a href="#" class="button-more"><img src="./images/yellow-hamburger.svg" width="17" alt="Меню"></a>
                 </div>
                 <div class="catalog-block" style="display: none;">
                     <ul class="catalog-list">
@@ -121,13 +121,13 @@
             <div class="price-container">
                 <aside class="price-filter">
                     <div class="price-filter-container">
-                        <details class="price-filter-item">
+                        <details class="price-filter__item">
                             <summary>Цена</summary>
                             <div class="filter-item-wrapper filter-item-wrapper--justify">
                                 <input type="text" class="filter-item-text" placeholder="от 1"> <input type="text" class="filter-item-text" placeholder="до 10 000">
                             </div>
                         </details>
-                        <details class="price-filter-item">
+                        <details class="price-filter__item">
                             <summary>Год релиза</summary>
                             <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                             <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -135,7 +135,7 @@
                             <button class="filter-item-btn">2019 <span>(60)</span></button>
                             <button class="filter-item-btn">2020 <span>(70)</span></button>
                         </details>
-                        <details class="price-filter-item">
+                        <details class="price-filter__item">
                             <summary>Цвет передней панели</summary>
                             <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                             <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -143,7 +143,7 @@
                             <button class="filter-item-btn">2019 <span>(60)</span></button>
                             <button class="filter-item-btn">2020 <span>(70)</span></button>
                         </details>
-                        <details class="price-filter-item">
+                        <details class="price-filter__item">
                             <summary>Технология изготовления экрана</summary>
                             <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                             <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -151,7 +151,7 @@
                             <button class="filter-item-btn">2019 <span>(60)</span></button>
                             <button class="filter-item-btn">2020 <span>(70)</span></button>
                         </details>
-                        <details class="price-filter-item">
+                        <details class="price-filter__item">
                             <summary>Год релиза</summary>
                             <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                             <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -159,7 +159,7 @@
                             <button class="filter-item-btn">2019 <span>(60)</span></button>
                             <button class="filter-item-btn">2020 <span>(70)</span></button>
                         </details>
-                        <details class="price-filter-item">
+                        <details class="price-filter__item">
                             <summary>Год релиза</summary>
                             <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                             <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -167,10 +167,10 @@
                             <button class="filter-item-btn">2019 <span>(60)</span></button>
                             <button class="filter-item-btn">2020 <span>(70)</span></button>
                         </details>
-                        <a href="#" class="price-filter-showmore">Показать все параметры</a>
-                        <button class="price-filter-reset">Сбросить фильтр</button>
-                        <div class="price-filter-item-more">
-                            <details class="price-filter-item">
+                        <a href="#" class="price-filter__showmore">Показать все параметры</a>
+                        <button class="price-filter__reset">Сбросить фильтр</button>
+                        <div class="price-filter__more">
+                            <details class="price-filter__item">
                                 <summary>Год релиза</summary>
                                 <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                                 <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -178,7 +178,7 @@
                                 <button class="filter-item-btn">2019 <span>(60)</span></button>
                                 <button class="filter-item-btn">2020 <span>(70)</span></button>
                             </details>
-                            <details class="price-filter-item">
+                            <details class="price-filter__item">
                                 <summary>Год релиза</summary>
                                 <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                                 <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -186,7 +186,7 @@
                                 <button class="filter-item-btn">2019 <span>(60)</span></button>
                                 <button class="filter-item-btn">2020 <span>(70)</span></button>
                             </details>
-                            <details class="price-filter-item">
+                            <details class="price-filter__item">
                                 <summary>Год релиза</summary>
                                 <button class="filter-item-btn filter-item-btn--active">2016 <span>(100)</span></button>
                                 <button class="filter-item-btn">2017 <span>(50)</span></button>
@@ -207,12 +207,12 @@
                         <li><a href="#" class="price-group-item">Xiaomi Redmi 4</a></li>
                     </ul>
                     <div class="price-sorting-wrapper">
-                        <ul class="price-sorting-block">
-                            <li class="sorting-block-item"><a href="#" class="sorting-block-url sorting-block-url--first">По умолчанию</a></li>
-                            <li class="sorting-block-item"><a href="#" class="sorting-block-url">По цене</a></li>
-                            <li class="sorting-block-item"><a href="#" class="sorting-block-url">По новизне</a></li>
-                            <li class="sorting-block-item"><a href="#" class="sorting-block-url">По названию</a></li>
-                            <li class="sorting-block-item"><a href="#" class="sorting-block-url">По наличию</a></li>
+                        <ul class="sorting-block">
+                            <li class="sorting-block__item"><a href="#" class="sorting-block__url sorting-block__url--first">По умолчанию</a></li>
+                            <li class="sorting-block__item"><a href="#" class="sorting-block__url">По цене</a></li>
+                            <li class="sorting-block__item"><a href="#" class="sorting-block__url">По новизне</a></li>
+                            <li class="sorting-block__item"><a href="#" class="sorting-block__url">По названию</a></li>
+                            <li class="sorting-block__item"><a href="#" class="sorting-block__url">По наличию</a></li>
                         </ul>
                         <select class="price-sorting-selector">
                         <option>По цене по убыванию</option>
@@ -229,126 +229,126 @@
 
                     <div class="price-items">
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span class="price-item__uncash"> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn price-item__btn--incart">В корзину</a>
                             </div>
                         </div>
 
 
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span class="price-item__uncash"> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn"></a>
                             </div>
                         </div>
 
 
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn"></a>
                             </div>
                         </div>
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span class="price-item__uncash"> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn"></a>
                             </div>
                         </div>
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span class="price-item__uncash"> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn"></a>
                             </div>
                         </div>
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span class="price-item__uncash"> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn"></a>
                             </div>
                         </div>
                         <div class="price-item">
-                            <div class="price-item-img">
+                            <div class="price-item__img">
                                 <a href="#"><img src="images/content/xiaomi-phone.jpg" alt="Xiaomi Redmi GO"></a>
                             </div>
-                            <h2 class="price-item-header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
-                            <p class="price-item-description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
-                            <span class="price-item-articul">Артикул: 291523</span>
-                            <a href="#" class="price-item-storage">В наличии</a>
-                            <span class="price-item-cash">5 245 ₽</span>
+                            <h2 class="price-item__header"><a href="#">Смартфон Xiaomi Redmi GO 8Gb Black</a></h2>
+                            <p class="price-item__description"> Redmi GO, 2019, черный, черный, пластик, 5.0”, 1280 x 720, IPS, есть, 2 SIM, nano SIM, WiFi 802.11 b/g/n, Android 8.1, Qualcomm, Snapdragon 425, 4 ядра, 1.4 Ггц, Adreno…</p>
+                            <span class="price-item__articul">Артикул: 291523</span>
+                            <a href="#" class="price-item__storage">В наличии</a>
+                            <span class="price-item__cash">5 245 ₽</span>
                             <div class="price-item-cart-block">
-                                <div class="price-item-price">
-                                    <span class="price-item-memo">Цена при оплате картой / в кредит</span>
-                                    <span class="price-item-uncash"> 5 495 ₽</span>
+                                <div class="price-item__price">
+                                    <span class="price-item__memo">Цена при оплате картой / в кредит</span>
+                                    <span class="price-item__uncash"> 5 495 ₽</span>
                                 </div>
-                                <a href="#" aria-label="Добавить товар в корзину" class="price-item-cart"></a>
+                                <a href="#" aria-label="Добавить товар в корзину" class="price-item__btn"></a>
                             </div>
                         </div>
                     </div>

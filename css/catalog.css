@@ -14,19 +14,19 @@
     color: #9b9b9b;
 }
 
-.price-filter-item-more {
+.price-filter__more {
     display: none;
 }
 
-.price-filter-item summary::-webkit-details-marker {
+.price-filter__item summary::-webkit-details-marker {
     display: none;
 }
 
-.price-filter-item>summary {
+.price-filter__item>summary {
     list-style: none;
 }
 
-.price-filter-item summary::after {
+.price-filter__item summary::after {
     position: absolute;
     content: "";
     background-image: url("../images/arrow-black.svg");
@@ -39,11 +39,11 @@
     transform: translateY(-50%);
 }
 
-.price-filter-item summary:hover::after {
+.price-filter__item summary:hover::after {
     background-image: url("../images/arrow-red-down.svg");
 }
 
-.price-filter-item summary {
+.price-filter__item summary {
     font-size: 18px;
     position: relative;
     outline-color: transparent;
@@ -51,23 +51,23 @@
     padding: 20px 30px 20px 0;
 }
 
-.price-filter-item[open] summary::after {
+.price-filter__item[open] summary::after {
     transform: rotate(180deg);
 }
 
-.price-filter-item summary:focus {
+.price-filter__item summary:focus {
     color: #e95a0c;
 }
 
-.price-filter-item {
+.price-filter__item {
     border-bottom: 1px solid #d8d8d8;
 }
 
-.price-filter-item[open] {
+.price-filter__item[open] {
     padding-bottom: 20px;
 }
 
-.price-filter-reset {
+.price-filter__reset {
     background-color: transparent;
     border: solid 3px #9b9b9b;
     border-radius: 10px;
@@ -89,7 +89,7 @@
     padding-top: 13px;
 }
 
-.price-filter-showmore {
+.price-filter__showmore {
     display: block;
     color: #ea5a0c;
     width: 129px;
@@ -99,7 +99,7 @@
     margin-top: 20px;
 }
 
-.price-filter-showmore::before {
+.price-filter__showmore::before {
     content: "";
     background-image: url("../images/plus-orange.svg");
     background-repeat: no-repeat;
@@ -161,15 +161,35 @@
     background: #ea5a0c;
 }
 
-.price-item-cart {
+.price-item__btn {
     display: block;
     background: url("../images/basket_set.svg");
     width: 58px;
     height: 46px;
 }
 
-.price-item-cart:hover {
+.price-item__btn:hover {
     background: url("../images/basket_btn_hover.svg");
+}
+
+.price-item__btn--incart {
+    background: url("../images/btn_d.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-decoration: none;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-item__btn--incart:hover,
+.price-item__btn--incart:focus {
+    color: #ffffff;
+    background: url("../images/btn_h.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .price-container {
@@ -189,46 +209,46 @@
     border-radius: 10px;
 }
 
-.price-item-header {
+.price-item__header {
     margin: 0;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.price-item-header a {
+.price-item__header a {
     text-decoration: none;
     color: #333;
 }
 
-.price-item-header a:hover {
+.price-item__header a:hover {
     color: #e20714;
 }
 
-.price-item-description {
+.price-item__description {
     font-size: 12px;
     color: #9b9b9b;
 }
 
-.price-item-articul {
+.price-item__articul {
     color: #9b9b9b;
     font-size: 14px;
 }
 
-.price-item-storage {
+.price-item__storage {
     color: #e95a0c;
     text-decoration: none;
     padding: 5px 0;
     font-size: 14px;
 }
 
-.price-item-cash {
+.price-item__cash {
     color: #333;
     font-size: 17px;
     font-weight: bold;
     padding: 20px 0;
 }
 
-.price-item-price {
+.price-item__price {
     max-width: 100px;
     font-size: 12px;
     color: #9b9b9b;
@@ -251,7 +271,7 @@
     border-color: #e20714;
 }
 
-.price-item-img {
+.price-item__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,7 +338,7 @@
     background: #f56618;
 }
 
-.price-sorting-block {
+.sorting-block {
     display: flex;
     list-style: none;
     font-size: 14px;
@@ -331,11 +351,11 @@
     border: 1px solid #dedede;
 }
 
-.sorting-block-item {
+.sorting-block__item {
     padding: 5px 0;
 }
 
-.sorting-block-url {
+.sorting-block__url {
     color: #ea5a0c;
     padding-left: 30px;
     padding-right: 20px;
@@ -343,15 +363,15 @@
     text-decoration: none;
 }
 
-.sorting-block-url--first {
+.sorting-block__url--first {
     padding-left: 0;
 }
 
-.sorting-block-url:hover {
+.sorting-block__url:hover {
     color: #e20714;
 }
 
-.sorting-block-url::after {
+.sorting-block__url::after {
     position: absolute;
     content: "";
     background-image: url("../images/sorting.svg");
