@@ -46,6 +46,9 @@
     .cart-summary-block {
         border: 0;
     }
+    .cart-information {
+        width: 100%;
+    }
 }
 
 
@@ -232,6 +235,17 @@
     }
     .footer-menu .footer-menu-item:last-child {
         display: none;
+    }
+    .contact-form-block__container {
+        flex-wrap: wrap;
+    }
+    .contact-form-block__userdata {
+        width: 100%;
+    }
+    .contact-form-block__memo {
+        width: 100%;
+        padding: 0;
+        margin: 20px 0 0 0;
     }
 }
 
