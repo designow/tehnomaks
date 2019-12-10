@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+include modules/head
+
+<body>
+include modules/header
+    <main class="content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Смартфоны</a></li>
+                <li><a href="#">Моя корзина</a></li>
+            </ul>
+            <h1 class="page-header">Моя корзина</h1>
+            <div class="cart-block">
+                <div class="cart-information">
+                    <div class="contact-form-block">
+                        <h3 class="form-header">Укажите контактную информацию</h3>
+                        <div class="contact-form-block__container">
+                            <div class="contact-form-block__userdata">
+                                <input type="text" placeholder="Имя*" class="contact-form-block__text">
+                                <input type="text" placeholder="Телефон*" class="contact-form-block__text">
+                                <input type="text" placeholder="Электронная почта*" class="contact-form-block__text">
+                                <span class="contact-form-block__tip">Все поля обязательны для заполнения</span>
+                            </div>
+                            <div class="contact-form-block__memo">
+                                <p class="contact-form-block__memotext">Авторизуйтесь на сайте, и мы сохраним всю информацию по заказу и автоматически заполним ваши контактные данные.</p>
+                                <a href="#" class="contact-form-block__url">Авторизация</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h2 class="header-title">Выберите удобный способ получения заказа в г. Иркутск</h2>
+                    <ul class="tab-items tab-items--left tab-items--noborder">
+                        <li class="tab-items__active"><a href="#" class="tab-items__url">Самовывоз из 2 магазинов</a></li>
+                        <li><a href="#" class="tab-items__url">Доставка по адресу</a></li>
+                    </ul>
+                    <div class="delivery-block">
+                        <div class="delivery-block__address">
+                            <input type="radio" checked id="address-1" class="radio-item"> <label for="address-1">г. Иркутск, ТРЦ"Сезон", ул. Свердлова, 36</label>
+                        </div>
+                        <div class="delivery-block__operating-mode">
+                            <span class="delivery-block__title">Режим работы:</span> пн — вс: 10:00 — 20:00
+                        </div>
+                        <div class="delivery-block__map">
+                            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=eT1JjxJ3Xvf3Jj8NQfxlhjk4tNF8URS3&width=100%&height=450"></script>
+                        </div>
+                        <div class="delivery-block__address">
+                            <input type="radio" id="address-1" class="radio-item"> <label for="address-1">г. Иркутск, Иркутск, ул. Баррикад 129/1</label>
+                        </div>
+                    </div>
+                    <div class="payment-block">
+                        <h3 class="form-header">Укажите контактную информацию</h3>
+                        <div class="payment-block__item">
+                            <input type="radio" checked class="radio-item"> <label>Наличными при получении</label>
+                        </div>
+                        <div class="payment-block__item">
+                            <input type="radio" class="radio-item"> <label>Онлайн оплата банковской картой</label>
+                        </div>
+                        <div class="payment-block__item">
+                            <input type="radio" class="radio-item"> <label>Он-лайн кредит Почта Банк</label>
+                        </div>
+                        <div class="payment-block__item">
+                            <input type="radio" class="radio-item"> <label>Он-лайн кредит Тинькофф Банк</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-side-block cart-side-block-top">
+                    <h3 class="form-header">Состав заказа</h3>
+                    <ul class="cart-side-block__items">
+                        <li class="cart-side-block__item"><a href="#" class="cart-side-block__url">Телефон Apple iPhone XS Max 64Gb 1 шт. × <span class="cart-side-block__bold">69 395 &#8381</span></a></li>
+                        <li class="cart-side-block__item">
+                            <a href="#" class="cart-side-block__url">Телефон Apple iPhone XS Max 64Gb 1 шт. × <span class="cart-side-block__bold">69 395 &#8381</span></a>
+                        </li>
+                        <li class="cart-side-block__item"><a href="#" class="cart-side-block__url">Телефон Apple iPhone XS Max 64Gb 1 шт. × <span class="cart-side-block__bold">69 395 &#8381</span></a></li>
+                    </ul>
+                    <a href="#" class="cart-side-block__url cart-side-block__url--orange">Уточнить заказ в корзине</a>
+                    <div class="cart-summary-information">
+                        <h3 class="form-header">Выбранный способ доставки и оплаты</h3>
+                        <ul class="cart-side-block__items cart-side-block__items--font">
+                            <li class="cart-side-block__item">Доставка: ТРЦ "Сезон", ул. Свердлова, 36</li>
+                            <li class="cart-side-block__item">Оплата: Наличными при получении</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart-summary-block">
+                        <span>К оплате</span>
+                        <span class="cart-summary-block__price">5 195 <span class="ruble">₽</span></span>
+                        <a href="#" class="cart-summary-block__btn">Оформить заказ</a>
+                        <div class="cart-summary-block__">
+                            <ul class="cart-side-block__items cart-side-block__items--summary">
+                                <li class="cart-side-block__item cart-side-block__item--left"><input type="checkbox" checked id="#" class="cart-side-block__check"> <label for="#" class="cart-side-block__label">Мне нужен звонок менеджера</label></li>
+                                <li class="cart-side-block__item cart-side-block__item--left"><input type="checkbox" id="#" checked class="cart-side-block__check"> <label for="#" class="cart-side-block__label">Настоящим подтверждаю, что я ознакомлен и согласен с условиями Политики обработки персональных данных.</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Наши преимущества -->
+            <ul class="advantages">
+                <li class="advantages__item advantages__item--warranty">Гибкая гарантия</li>
+                <li class="advantages__item advantages__item--delivery">Удобная доставка</li>
+                <li class="advantages__item advantages__item--2weeks">2 недели на пробу</li>
+                <li class="advantages__item advantages__item--original advantages__item--last">Только оригинал</li>
+            </ul>
+            <!-- /Наши преимущества -->
+        </div>
+        <!-- Подписка на рассылку -->
+        <div class="orange-background">
+            <div class="container">
+                <div class="feedback-block">
+                    <div class="feedback-heading">
+                        <h2>Будь в курсе последних акций и предложений</h2>
+                        <p>Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
+                    </div>
+                    <div class="feedback-form">
+                        <form action="#" method="post">
+                            <input type="text" class="feedback-form-email" placeholder="Введите ваш email"> <button class="feedback-form-button">Подписаться</button>
+                            <div class="feedback-label-block">
+                                <input type="checkbox" id="subscribe">
+                                <label for="subscribe">Я согласен с уловиями подписки</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Подписка на рассылку -->
+    </main>
+include modules/footer
+</body>
+</html>
