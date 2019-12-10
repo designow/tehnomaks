@@ -1,0 +1,23 @@
+function selectTag(name) {
+    return document.querySelector(name);
+}
+
+let catalog_button = selectTag('#catalog-button');
+let catalog_block = selectTag('#catalog-block');
+let block_minicart = selectTag('#header-cart-block__minicart');
+let minicart_list = selectTag('#header-minicart-list');
+let button_more = selectTag('#button-more');
+let header_menu = selectTag('#header-menu');
+
+catalog_button.addEventListener('click', function(evt) {
+    catalog_block.classList.toggle('catalog-block--show');
+});
+
+button_more.addEventListener('click', function(evt) {
+    header_menu.classList.toggle('header-menu--show');
+});
+
+block_minicart.addEventListener('click', function(evt) {
+    block_minicart.classList.toggle('header-cart-block__minicart--show');
+    minicart_list.classList.toggle('header-minicart-list--show');
+});

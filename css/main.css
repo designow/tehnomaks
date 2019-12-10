@@ -164,10 +164,6 @@ a:hover {
     position: relative;
 }
 
-.header-cart-block__minicart:hover+div.header-minicart-list {
-    display: block;
-}
-
 .header-cart-block__minicart::before {
     content: "";
     position: absolute;
@@ -181,7 +177,8 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.header-cart-block__minicart:hover {
+.header-cart-block__minicart:hover,
+.header-cart-block__minicart--show {
     background: #e95a0c;
     color: #ffffff;
 }
@@ -200,6 +197,10 @@ a:hover {
 
 .header-minicart-list h2 {
     margin: 20px;
+}
+
+.header-minicart-list--show {
+    display: block;
 }
 
 .header-cart-block__minicart--notempty {
@@ -341,7 +342,23 @@ a:hover {
     right: 0;
 }
 
+.header-menu {
+    position: absolute;
+    background: #ffffff;
+    top: 45px;
+    right: 0;
+    z-index: 2;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 5px 4px 0px rgba(0, 0, 0, .1);
+}
+
+.header-menu--show {
+    display: block;
+}
+
 .header-bottom {
+    position: relative;
     border-top: 1px solid #cccccc;
 }
 
@@ -408,20 +425,43 @@ a:hover {
     display: none;
 }
 
+.header-menu__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu__item {
+    padding: 10px 0;
+}
+
+.header-menu__url {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .button-more {
+    background-image: url('../images/yellow-hamburger.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
     display: block;
     text-align: center;
     position: relative;
     text-decoration: none;
     color: #000000;
     font-size: 14px;
-    padding: 15px 15px 15px 25px;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .header-bottom-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 
@@ -512,6 +552,11 @@ a:hover {
     width: 270px;
     top: 50px;
     z-index: 1;
+    display: none;
+}
+
+.catalog-block--show {
+    display: block;
 }
 
 .catalog-list {

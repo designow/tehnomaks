@@ -23,8 +23,8 @@
 </div>
 <div class="header-cart-block">
 <a href="#" class="header-cart-block__ulogin"><img src="./images/ulogin.svg" alt="" width="23"></a>
-<a href="#" class="header-cart-block__minicart">Моя корзина пуста</a>
-<div class="header-minicart-list">
+<a href="#" class="header-cart-block__minicart" id="header-cart-block__minicart">Моя корзина пуста</a>
+<div class="header-minicart-list" id="header-minicart-list">
 <h2>Моя корзина</h2>
 <div class="minicart-list__item">
 <div class="minicart-list-img">
@@ -73,7 +73,7 @@
 <div class="header-bottom">
 <div class="container">
 <div class="header-bottom-container">
-<a href="#" class="catalog-button">Каталог товаров</a>
+<a href="#" class="catalog-button" id="catalog-button">Каталог товаров</a>
 <ul class="header-bottom__menu">
 <li><a href="#">Магазины</a></li>
 <li><a href="#">Доставка и оплата</a></li>
@@ -82,9 +82,17 @@
 <li><a href="#">Бонусная система</a></li>
 <li><a href="#">Покупка в кредит</a></li>
 </ul>
-<a href="#" class="button-more"><img src="./images/yellow-hamburger.svg" width="17" alt="Меню"></a>
+<a href="#" class="button-more" aria-label="Меню разделов сайта"></a>
+<div class="header-menu">
+<ul>
+<li>Ваш город: Красноярск</li>
+<li>Личный кабинет</li>
+<li>Магазины</li>
+<li>Юридическим лицам</li>
+</ul>
 </div>
-<div class="catalog-block" style="display: none;">
+</div>
+<div class="catalog-block catalog-block--show" id="catalog-block">
 <ul class="catalog-list">
 <li><a href="#">Компьютеры</a></li>
 <li><a href="#">Планшеты, ноутбуки, компьютеры</a></li>
@@ -450,7 +458,7 @@
 </div>
 <!-- /Подписка на рассылку -->
 </main><footer class="footer">
-<div class="container1">
+<div class="container">
 <div class="footer-menu">
 <div class="footer-phone">
 <span class="footer-phone-title">Единая справочная служба:</span>
@@ -528,12 +536,13 @@
 </div>
 </div>
 <div class="footer-bottom">
-<div class="footer-copyright">
-<2000>— 2019, Компания «ТехноМакс»</2000></div>
+<div class="footer-copyright">&copy; 2000 — 2019, Компания «ТехноМакс»
+</div>
 <div class="footer-information">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.ООО «Техномакс-Иркутск»                    ИНН/КПП 3808224550/380801001 ОГРН 1123850025750 Юр. и факт адрес: 664011, г. Иркутск, ул. Свердлова, д. 36, пав. 111
 <p><a href="#" class="footer-politics">Политика обработки персональных данных</a></p>
 </div>
 </div>
 </div>
+<script src="../js/script.js"></script>
 </footer></body>
 </html>

@@ -106,9 +106,6 @@
     .header-bottom__menu li:nth-last-child(4) {
         display: none;
     }
-    .catalog-block {
-        display: none;
-    }
     .banner-block__slider {
         margin-left: 0;
     }
@@ -195,6 +192,12 @@
         display: block;
         width: 100%;
         margin-right: 10px;
+    }
+    .catalog-block {
+        width: 95%;
+    }
+    .header-menu {
+        width: 95%
     }
 }
 
