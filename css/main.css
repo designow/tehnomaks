@@ -6,19 +6,13 @@ body {
     min-width: 360px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-weight: normal;
 }
 
-a:active,
-a:focus,
-a:hover {
+a:active, a:focus, a:hover {
     color: #e20714;
 }
-
 
 /* Общие */
 
@@ -104,7 +98,6 @@ a:hover {
     margin-bottom: 30px;
 }
 
-
 /* Header */
 
 .header-top {
@@ -177,8 +170,7 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.header-cart-block__minicart:hover,
-.header-cart-block__minicart--show {
+.header-cart-block__minicart:hover, .header-cart-block__minicart--show {
     background: #e95a0c;
     color: #ffffff;
 }
@@ -350,6 +342,7 @@ a:hover {
     z-index: 2;
     padding: 20px;
     display: none;
+    box-sizing: border-box;
     box-shadow: 0 5px 4px 0px rgba(0, 0, 0, .1);
 }
 
@@ -386,8 +379,7 @@ a:hover {
     transition: all 0.25s ease;
 }
 
-.catalog-button:hover,
-.catalog-button:focus {
+.catalog-button:hover, .catalog-button:focus {
     color: #ffffff;
     background: #f56618;
 }
@@ -464,7 +456,6 @@ a:hover {
     position: relative;
 }
 
-
 /* Блок поиска */
 
 .header-search-container {
@@ -489,8 +480,7 @@ a:hover {
     position: relative;
 }
 
-.header-search-block:hover,
-.header-search-block:focus {
+.header-search-block:hover, .header-search-block:focus {
     border: 1px solid #eaaf0c;
 }
 
@@ -517,8 +507,7 @@ a:hover {
     cursor: pointer;
 }
 
-.header-search-submit:hover,
-.header-search-submit:focus {
+.header-search-submit:hover, .header-search-submit:focus {
     background-color: #f6a600;
 }
 
@@ -539,7 +528,6 @@ a:hover {
     background-image: url("../images/close_lg_red.svg");
 }
 
-
 /* Блок корзины товаров */
 
 .header-cart-block {
@@ -547,12 +535,11 @@ a:hover {
 }
 
 .catalog-block {
-    background: #e95a0c;
     position: absolute;
-    width: 270px;
     top: 50px;
     z-index: 1;
     display: none;
+    box-sizing: border-box;
 }
 
 .catalog-block--show {
@@ -560,16 +547,43 @@ a:hover {
 }
 
 .catalog-list {
+    background: #e95a0c;
+    min-width: 270px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.catalog-list li {
+.catalog-list__item {
     border-bottom: 1px solid #EB6A24;
 }
 
-.catalog-list a {
+.catalog-list__item:hover>.catalog-list-subblock, .catalog-list-subblock:hover {
+    visibility: visible;
+    display: block;
+}
+
+.catalog-list-subblock {
+    display: none;
+    visibility: hidden;
+    background: #f6a600;
+    border-left: 1px solid #eec36b;
+    z-index: 3;
+    top: 0;
+    left: 269px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.catalog-list--sublist {
+    width: 270px;
+}
+
+.catalog-list__item--sub {
+    border-bottom: 1px solid #eec36b;
+}
+
+.catalog-list__url {
     display: block;
     position: relative;
     padding: 20px 40px 20px 20px;
@@ -578,12 +592,12 @@ a:hover {
     font-size: 14px;
 }
 
-.catalog-list a:hover {
+.catalog-list__url:hover {
     color: #e20714;
     background-color: #f6a600;
 }
 
-.catalog-list a::after {
+.catalog-list__url::after {
     position: absolute;
     content: "";
     background-image: url("../images/arrow.svg");
@@ -595,10 +609,26 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.catalog-list a:hover::after {
+.catalog-list__url:hover::after {
     background-image: url("../images/arrow-red.svg");
 }
 
+.catalog-wrapper {
+    display: flex;
+}
+
+.catalog-submenu {
+    visibility: hidden;
+    display: none;
+    background-color: #f6a600;
+    min-width: 200px;
+    height: 100px;
+}
+
+.catalog-submenu--show {
+    display: block;
+    visibility: visible;
+}
 
 /* Подвал сайта */
 
@@ -686,7 +716,6 @@ a:hover {
 .footer-politics {
     color: #9b9b9b;
 }
-
 
 /* Главная страница */
 
