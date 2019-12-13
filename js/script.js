@@ -34,12 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
     //Показ подменю
 
     selectTag('#catalog-list').addEventListener('mouseover', function (evt) {
+
         if (event.target.nodeName == 'A') {
-
             //Получаем ссылку на подменю исходя из data-articul  
-
             let subMenu = getSubmenu(evt);
-
             if (subMenu && !subMenu.classList.contains("catalog-submenu--show")) {
                 subMenu.classList.add("catalog-submenu--show");
             }
@@ -48,11 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     selectTag('#catalog-submenu-block').addEventListener('mouseover', function (evt) {
         if (event.target.nodeName == 'DIV') {
-
             //Получаем ссылку на подменю исходя из data-articul  
-
             let subMenu = getSubmenu(evt);
-
             if (subMenu && !subMenu.classList.contains("catalog-submenu--show")) {
                 subMenu.classList.add("catalog-submenu--show");
             }
@@ -62,9 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     selectTag('#catalog-submenu-block').addEventListener('mouseout', function (evt) {
         if (event.target.nodeName == 'DIV') {
-
             let subMenu = getSubmenu(evt);
-
             if (subMenu && subMenu.classList.contains("catalog-submenu--show")) {
                 subMenu.classList.remove("catalog-submenu--show");
             }
@@ -75,13 +68,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     selectTag('#catalog-list').addEventListener('mouseout', function (evt) {
         if (event.target.nodeName == 'A') {
-
             let subMenu = getSubmenu(evt);
-
             if (subMenu && subMenu.classList.contains("catalog-submenu--show")) {
-
                 subMenu.classList.remove("catalog-submenu--show");
-
             }
         }
     });
