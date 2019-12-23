@@ -1,20 +1,35 @@
 .flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .product-images-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 20px;
 }
 
 .product-images-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .product-images-list__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin: 0;
@@ -37,11 +52,19 @@
 }
 
 .product-price-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #f3f3f3;
     min-width: 320px;
+    -ms-flex-item-align: start;
     align-self: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 20px;
 }
@@ -172,7 +195,10 @@
 }
 
 .product-bottom-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 20px 20px;
     border: solid 1px #d8d8d8;
@@ -181,8 +207,15 @@
 }
 
 .product-bottom-block__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -196,7 +229,11 @@
 }
 
 .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     list-style: none;
     margin: 50px 0;
@@ -219,6 +256,7 @@
     width: 1px;
     height: 120px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 

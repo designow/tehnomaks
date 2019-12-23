@@ -2,7 +2,7 @@
 <html lang="ru"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Техномкс - новая верстка</title>
+<title>Техномакс - новая верстка</title>
 <link href="../css/style.css" rel="stylesheet">
 </head><body><header class="header">
 <div class="header-top">
@@ -18,7 +18,31 @@
 </a>
 <div class="header-search-container">
 <div class="header-search-block">
-<form action="#" method="post"><input id="search_string" placeholder="Поиск по каталогу"><button type="submit" class="header-search-submit"></button><button class="header-search-close"></button></form>
+<form action="#" method="post"><input id="search_string" class="header-search-block__search" type="search" placeholder="Поиск по каталогу" autocomplete="off"><button type="submit" class="header-search-submit"></button>
+<div class="search-result">
+<span class="search-result__title">Категории</span>                        
+<ul class="search-result__items">
+<li><a href="#" class="search-result__item">Расходные материалы / техника Kyocera</a></li>
+<li><a href="#" class="search-result__item">Лазерный МФУ / Kyocera</a></li>
+<li><a href="#" class="search-result__item">Антивирусы и безопасность / Kaspersky Lab (Лаборатория Касперского) / Kaspersky Lab (Лаборатория Касперского)</a></li>
+<li><a href="#" class="search-result__item">Запчасти / Kyocera P3060DN</a></li>
+<li><a href="#" class="search-result__item">Лазерные принтеры / Kyocera</a></li>
+<li><a href="#" class="search-result__item">Опции для принтеров и сканеров / Kyocera</a></li>
+<li><a href="#" class="search-result__item">Техника Kyocera / Оригинальные</a></li>
+<li><a href="#" class="search-result__item">Техника Kyocera / Совместимые</a></li>
+</ul>
+<span class="search-result__title">Товары</span>                        
+<ul class="search-result__items">
+<li><a href="#" class="search-result__item">Клавиатуры, мыши, Smartbuy ONE 329 черно-желтая</a></li>
+<li><a href="#" class="search-result__item">Барабан для Kyocera-Mita FS 720/820/920/1016/1028</a></li>
+<li><a href="#" class="search-result__item">TK-5280Y ELP Imaging для Kyocera Ecosys M6235cidn</a></li>
+<li><a href="#" class="search-result__item">TK-5280Y ELP Imaging для Kyocera Ecosys M6235cidn</a></li>
+<li><a href="#" class="search-result__item">TK-5280Y ELP Imaging для Kyocera Ecosys M6235cidn</a></li>
+<li><a href="#" class="search-result__item">TK-5280Y ELP Imaging для Kyocera Ecosys M6235cidn</a></li>
+<li><a href="#" class="search-result__item">TK-5280Y ELP Imaging для Kyocera Ecosys M6235cidn</a></li>
+</ul>
+</div>
+</form>
 </div>
 </div>
 <div class="header-cart-block">
@@ -82,30 +106,550 @@
 <li><a href="#">Бонусная система</a></li>
 <li><a href="#">Покупка в кредит</a></li>
 </ul>
-<a href="#" class="button-more" aria-label="Меню разделов сайта"></a>
-<div class="header-menu">
-<ul>
-<li>Ваш город: Красноярск</li>
-<li>Личный кабинет</li>
-<li>Магазины</li>
-<li>Юридическим лицам</li>
-</ul>
-</div>
+<a href="#" class="button-more" id="button-more" aria-label="Меню разделов сайта"></a>
 </div>
 <div class="catalog-block catalog-block--show" id="catalog-block">
-<ul class="catalog-list">
-<li><a href="#">Компьютеры</a></li>
-<li><a href="#">Планшеты, ноутбуки, компьютеры</a></li>
-<li><a href="#">Мониторы</a></li>
-<li><a href="#">Xiaomi</a></li>
-<li><a href="#">Apple</a></li>
-<li><a href="#">Гаджеты и умная техника</a></li>
-<li><a href="#">Фитнес здоровье красота</a></li>
-<li><a href="#">Мониторы</a></li>
-<li><a href="#">Xiaomi</a></li>
-<li><a href="#">Apple</a></li>
-<li><a href="#">Мониторы</a></li>
-<li><a href="#">Xiaomi</a></li>
+<ul class="catalog-list" id="catalog-list">
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Компьютеры</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li> 
+</li>                                    
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Мониторы</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Xiaomi</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Apple</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Гаджеты и умная техника</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Фитнес здоровье красота</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Мониторы</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Xiaomi</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Apple</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Мониторы</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="catalog-list__item"><a href="#" class="catalog-list__url">Xiaomi</a>
+<ul class="catalog-submenu">
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Планшеты, ноутбуки, компьютеры</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" data-articul="1293836" class="catalog-list__url catalog-list__url--title">Мониторы</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Мониторы, мониторы, мониторы</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url  catalog-list__url--title">Xiaomi</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+<li class="catalog-submenu__block"><a href="#" class="catalog-list__url catalog-list__url--title">Apple</a>
+<ul class="catalog-submenu__items">
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+<li><a href="#" class="catalog-list__url catalog-list__url--suburl">Планшеты, ноутбуки, компьютеры</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="header-menu" id="header-menu">
+<ul class="header-menu__items">
+<li class="header-menu__item"><a href="#" class="header-menu__url">Ваш город: Красноярск</a></li>
+<li class="header-menu__item"><a href="#" class="header-menu__url">Личный кабинет</a></li>
+<li class="header-menu__item"><a href="#" class="header-menu__url">Магазины</a></li>
+<li class="header-menu__item"><a href="#" class="header-menu__url">Юридическим лицам</a></li>
 </ul>
 </div>
 </div>
