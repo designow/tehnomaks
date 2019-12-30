@@ -5,6 +5,23 @@
 <title>Техномакс - новая верстка</title>
 <link href="../css/style.css" rel="stylesheet">
 </head><body><header class="header">
+<div class="cities-container">
+<div class="container">
+<h3 class="cities-container__heading">Выберите ваш город</h3>
+<input type="search" placeholder="Введите название города" class="city-search">
+<ul class="cities-items">
+<li class="cities-item"><input type="radio" id="city[1]" name="city"> <label for="city[1]">Красноярск</label></li>
+<li class="cities-item"><input type="radio" id="city[2]" name="city"> <label for="city[2]">Новокузнецк</label></li>
+<li class="cities-item"><input type="radio" id="city[3]" name="city"> <label for="city[3]">Краснодар</label></li>
+<li class="cities-item"><input type="radio" id="city[4]" name="city"> <label for="city[4]">Иркутск</label></li>
+<li class="cities-item"><input type="radio" id="city[5]" name="city"> <label for="city[5]">Новосибирск</label></li>
+<li class="cities-item"><input type="radio" id="city[6]" name="city"> <label for="city[6]">Санкт-Петербург</label></li>
+<li class="cities-item"><input type="radio" id="city[7]" name="city"> <label for="city[7]">Улан-Удэ</label></li>
+<li class="cities-item"><input type="radio" id="city[8]" name="city"> <label for="city[8]">Екатеринбург</label></li>
+</ul>
+<button class="close-button"></button>
+</div>
+</div>
 <div class="header-top">
 <div class="container container--flex">
 <a href="#" class="header-top__city">Иркутск</a>
@@ -47,47 +64,49 @@
 </div>
 <div class="header-cart-block">
 <a href="#" class="header-cart-block__ulogin"><img src="./images/ulogin.svg" alt="" width="23"></a>
+<div class="minicart-wrapper">
 <a href="#" class="header-cart-block__minicart" id="header-cart-block__minicart">Моя корзина пуста</a>
-<div class="header-minicart-list" id="header-minicart-list">
+<div class="minicart-items" id="minicart-items">
 <h2>Моя корзина</h2>
-<div class="minicart-list__item">
-<div class="minicart-list-img">
+<div class="minicart-item">
+<div class="minicart-item__img">
 <a href="#"><img src=" ./images/content/watch.jpg" width="100" alt=""></a>
 </div>
-<div class="minicart-list-product">
-<span class="minicart-list-model">iPhone XS</span>
-<a href="#" class="minicart-list-title">Телефон Apple iPhone XS 128Gb apple...</a>
+<div class="minicart-item__header">
+<span class="minicart-item__model">iPhone XS</span>
+<a href="#" class="minicart-item__title">Телефон Apple iPhone XS 128Gb apple...</a>
 </div>
-<span class="minicart-list-price">64 595 ₽</span>
-<a href="#" aria-label="Удалить товар" class="minicart-list-delete"></a>
+<span class="minicart-item__price">64 595 ₽</span>
+<a href="#" aria-label="Удалить товар" class="minicart-item__delete"></a>
 </div>
-<div class="minicart-list__item">
-<div class="minicart-list-img">
+<div class="minicart-item">
+<div class="minicart-item__img">
 <a href="#"><img src="./images/content/watch.jpg" width="100" alt=""></a>
 </div>
-<div class="minicart-list-product">
-<span class="minicart-list-model">iPhone XS</span>
-<a href="#" class="minicart-list-title">Телефон Apple iPhone XS 64Gb...</a>
+<div class="minicart-item__header">
+<span class="minicart-item__model">iPhone XS</span>
+<a href="#" class="minicart-item__title">Телефон Apple iPhone XS 64Gb...</a>
 </div>
-<span class="minicart-list-price">64 595 ₽</span>
-<a href="#" aria-label="Удалить товар" class="minicart-list-delete"></a>
+<span class="minicart-item__price">64 595 ₽</span>
+<a href="#" aria-label="Удалить товар" class="minicart-item__delete"></a>
 </div>
-<div class="minicart-list__item no-border">
-<div class="minicart-list-img">
+<div class="minicart-item no-border">
+<div class="minicart-item__img">
 <a href="#"><img src=" ./images/content/watch.jpg" width="100" alt=""></a>
 </div>
-<div class="minicart-list-product">
-<span class="minicart-list-model">iPhone XS</span>
-<a href="#" class="minicart-list-title">Телефон Apple iPhone XS 64Gb...</a>
+<div class="minicart-item__header">
+<span class="minicart-item__model">iPhone XS</span>
+<a href="#" class="minicart-item__title">Телефон Apple iPhone XS 64Gb...</a>
 </div>
-<span class="minicart-list-price">64 595 ₽</span>
-<a href="#" aria-label="Удалить товар" class="minicart-list-delete"></a>
+<span class="minicart-item__price">64 595 ₽</span>
+<a href="#" aria-label="Удалить товар" class="minicart-item__delete"></a>
 </div>
-<div class="minicart-list-bottom">
-<a href="#" class="minicart-list-btn">Оформить заказ</a>
-<div class="minicart-list-total">
+<div class="minicart-items-bottom">
+<a href="#" class="minicart-btn">Оформить заказ</a>
+<div class="minicart-total">
 <span>На общую сумму:</span>
-<span class="minicart-total-price">64 595 ₽</span>
+<span class="minicart-total__price">64 595 ₽</span>
+</div>
 </div>
 </div>
 </div>
@@ -99,12 +118,12 @@
 <div class="header-bottom-container">
 <a href="#" class="catalog-button" id="catalog-button">Каталог товаров</a>
 <ul class="header-bottom__menu">
-<li><a href="#">Магазины</a></li>
-<li><a href="#">Доставка и оплата</a></li>
-<li><a href="#">Б/у: покупка и продажа</a></li>
-<li><a href="#">Юридическим лицам</a></li>
-<li><a href="#">Бонусная система</a></li>
-<li><a href="#">Покупка в кредит</a></li>
+<li class="header-bottom__item"><a href="#" class="header-bottom__url">Магазины</a></li>
+<li class="header-bottom__item"><a href="#" class="header-bottom__url">Доставка и оплата</a></li>
+<li class="header-bottom__item"><a href="#" class="header-bottom__url">Б/у: покупка и продажа</a></li>
+<li class="header-bottom__item"><a href="#" class="header-bottom__url">Юридическим лицам</a></li>
+<li class="header-bottom__item"><a href="#" class="header-bottom__url">Бонусная система</a></li>
+<li class="header-bottom__item"><a href="#" class="header-bottom__url">Покупка в кредит</a></li>
 </ul>
 <a href="#" class="button-more" id="button-more" aria-label="Меню разделов сайта"></a>
 </div>
@@ -655,14 +674,80 @@
 </div>
 </div>
 </header><main class="content">
-<div class="container">
-<ul class="breadcrumbs">
-<li><a href="#">Главная</a></li>
-<li><a href="#">Смартфоны</a></li>
-<li><a href="#">Xiaomi</a></li>
-<li><a href="#">Xiaomi Mi Mix</a></li>
+<div class="overlay"></div>
+<div class="warehouses-block">
+<h3 class="warehouses-block__title">Наличие товара в магазинах</h3>
+<div class="warehouses-block__container">
+<table class="warehouses-block__table">
+<tr>
+<th class="warehouses-block__shopname">Название и адрес магазина</th>
+<th class="warehouses-block__shopavailability">Наличие</th>
+</tr>
+<tr>
+<td class="warehouses-block__cell">
+<ul class="warehouses-block__address">
+<li class="warehouses-block__item">Иркутск Сезон</li>
+<li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+<li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
 </ul>
-<h1 class="category-header">Xiaomi Mi Mix</h1>
+</td>
+<td class="warehouses-block__cell">5 шт.</td>
+</tr>
+<tr>
+<td class="warehouses-block__cell">
+<ul class="warehouses-block__address">
+<li class="warehouses-block__item">Иркутск Сезон</li>
+<li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+<li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+</ul>
+</td>
+<td class="warehouses-block__cell">3 шт.</td>
+</tr>
+<tr>
+<td class="warehouses-block__cell">
+<ul class="warehouses-block__address">
+<li class="warehouses-block__item">Иркутск Сезон</li>
+<li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+<li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+</ul>
+</td>
+<td class="warehouses-block__cell">15 шт.</td>
+</tr>
+<tr>
+<td class="warehouses-block__cell">
+<ul class="warehouses-block__address">
+<li class="warehouses-block__item">Иркутск Сезон</li>
+<li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+<li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+</ul>
+</td>
+<td class="warehouses-block__cell">15 шт.</td>
+</tr> 
+<tr>
+<td class="warehouses-block__cell">
+<ul class="warehouses-block__address">
+<li class="warehouses-block__item">Иркутск Сезон</li>
+<li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+<li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+</ul>
+</td>
+<td class="warehouses-block__cell">15 шт.</td>
+</tr>                       
+</table>
+</div>
+<div class="warehouses-product">
+<img src="./images/content/1569838094_2.jpg" alt="">   
+<div class="warehouses-product__title">Конструктор Xiaomi Mitu Fidget Building Blocks<span class="warehouses-product__articul">Артикул: 282309</span></div>
+<div class="warehouses-product__price">650 Р</div>
+</div>
+<button class="warehouses-product__close"></button>   
+</div>
+<div class="container"><ul class="breadcrumbs">
+<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__url">Главная</a></li>
+<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__url">Смартфоны</a></li>
+<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__url">Xiaomi</a></li>
+<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__url">Xiaomi Mi Mix</a></li>
+</ul><h1 class="category-header">Xiaomi Mi Mix</h1>
 <!-- Блок с изображением и ценой -->
 <div class="flex-wrapper">
 <div class="product-images-block">
@@ -1005,76 +1090,76 @@
 <div class="container">
 <div class="footer-menu">
 <div class="footer-phone">
-<span class="footer-phone-title">Единая справочная служба:</span>
-<a class="footer-phone-number" href="tel:88002503650">8 800 250 3650</a>
-<a href="#" class="footer-phone-url">заказать звонок</a>
+<span class="footer-phone__title">Единая справочная служба:</span>
+<a class="footer-phone__number" href="tel:88002503650">8 800 250 3650</a>
+<a href="#" class="footer-phone__url">заказать звонок</a>
 </div>
 <div class="footer-menu-item">
-<h2>Покупателю</h2>
+<h2 class="footer-menu-title">Покупателю</h2>
 <ul class="footer-menu-list">
-<li>
-<a href="#">Личный кабинет</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Личный кабинет</a>
 </li>
-<li>
-<a href="#">Мои заказы</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Мои заказы</a>
 </li>
-<li>
-<a href="#">Доставка и оплата</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Доставка и оплата</a>
 </li>
-<li>
-<a href="#">Распродажа</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Распродажа</a>
 </li>
-<li>
-<a href="#">Купить в кредит</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Купить в кредит</a>
 </li>
-<li>
-<a href="#">Программа Trade-In</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Программа Trade-In</a>
 </li>
 </ul>
 </div>
 <div class="footer-menu-item">
-<h2>Техномакс</h2>
+<h2 class="footer-menu-title">Техномакс</h2>
 <ul class="footer-menu-list">
-<li>
-<a href="#">Личный кабинет</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Личный кабинет</a>
 </li>
-<li>
-<a href="#">Мои заказы</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Мои заказы</a>
 </li>
-<li>
-<a href="#">Доставка и оплата</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Доставка и оплата</a>
 </li>
-<li>
-<a href="#">Распродажа</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Распродажа</a>
 </li>
-<li>
-<a href="#">Купить в кредит</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Купить в кредит</a>
 </li>
-<li>
-<a href="#">Программа Trade-In</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Программа Trade-In</a>
 </li>
 </ul>
 </div>
 <div class="footer-menu-item">
-<h2>Сервисы</h2>
+<h2 class="footer-menu-title">Сервисы</h2>
 <ul class="footer-menu-list">
-<li>
-<a href="#">Личный кабинет</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Личный кабинет</a>
 </li>
-<li>
-<a href="#">Мои заказы</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Мои заказы</a>
 </li>
-<li>
-<a href="#">Доставка и оплата</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Доставка и оплата</a>
 </li>
-<li>
-<a href="#">Распродажа</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Распродажа</a>
 </li>
-<li>
-<a href="#">Купить в кредит</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Купить в кредит</a>
 </li>
-<li>
-<a href="#">Программа Trade-In</a>
+<li class="footer-menu-element">
+<a href="#" class="footer-menu-element__url">Программа Trade-In</a>
 </li>
 </ul>
 </div>

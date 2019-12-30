@@ -6,13 +6,76 @@ include modules/head
 <body>
 include modules/header
     <main class="content">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Смартфоны</a></li>
-                <li><a href="#">Xiaomi</a></li>
-                <li><a href="#">Xiaomi Mi Mix</a></li>
+        <div class="overlay"></div>
+        <div class="warehouses-block">
+        <h3 class="warehouses-block__title">Наличие товара в магазинах</h3>
+        <div class="warehouses-block__container">
+            <table class="warehouses-block__table">
+            <tr>
+            <th class="warehouses-block__shopname">Название и адрес магазина</th>
+            <th class="warehouses-block__shopavailability">Наличие</th>
+            </tr>
+            <tr>
+            <td class="warehouses-block__cell">
+            <ul class="warehouses-block__address">
+            <li class="warehouses-block__item">Иркутск Сезон</li>
+            <li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+            <li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
             </ul>
+            </td>
+            <td class="warehouses-block__cell">5 шт.</td>
+            </tr>
+            <tr>
+            <td class="warehouses-block__cell">
+            <ul class="warehouses-block__address">
+            <li class="warehouses-block__item">Иркутск Сезон</li>
+            <li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+            <li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+            </ul>
+            </td>
+            <td class="warehouses-block__cell">3 шт.</td>
+            </tr>
+            <tr>
+            <td class="warehouses-block__cell">
+            <ul class="warehouses-block__address">
+            <li class="warehouses-block__item">Иркутск Сезон</li>
+            <li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+            <li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+            </ul>
+            </td>
+            <td class="warehouses-block__cell">15 шт.</td>
+            </tr>
+            <tr>
+            <td class="warehouses-block__cell">
+            <ul class="warehouses-block__address">
+            <li class="warehouses-block__item">Иркутск Сезон</li>
+            <li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+            <li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+            </ul>
+            </td>
+            <td class="warehouses-block__cell">15 шт.</td>
+            </tr> 
+            <tr>
+            <td class="warehouses-block__cell">
+            <ul class="warehouses-block__address">
+            <li class="warehouses-block__item">Иркутск Сезон</li>
+            <li class="warehouses-block__item">Адрес: г. Иркутск, ТРЦ "Сезон", ул. Свердлова, 36</li>
+            <li class="warehouses-block__item">Время работы: пн — вс: 10:00 — 20:00</li>
+            </ul>
+            </td>
+            <td class="warehouses-block__cell">15 шт.</td>
+            </tr>                       
+            </table>
+        </div>
+        <div class="warehouses-product">
+         <img src="./images/content/1569838094_2.jpg" alt="">   
+         <div class="warehouses-product__title">Конструктор Xiaomi Mitu Fidget Building Blocks<span class="warehouses-product__articul">Артикул: 282309</span></div>
+         <div class="warehouses-product__price">650 Р</div>
+        </div>
+         <button class="warehouses-product__close"></button>   
+        </div>
+        <div class="container">
+            include modules/breadcrumbs
             <h1 class="category-header">Xiaomi Mi Mix</h1>
             <!-- Блок с изображением и ценой -->
             <div class="flex-wrapper">

@@ -1,4 +1,21 @@
 <header class="header">
+    <div class="cities-container">
+        <div class="container">
+        <h3 class="cities-container__heading">Выберите ваш город</h3>
+        <input type="search" placeholder="Введите название города" class="city-search">
+            <ul class="cities-items">
+                <li class="cities-item"><input type="radio" id="city[1]" name="city"> <label for="city[1]">Красноярск</label></li>
+                <li class="cities-item"><input type="radio" id="city[2]" name="city"> <label for="city[2]">Новокузнецк</label></li>
+                <li class="cities-item"><input type="radio" id="city[3]" name="city"> <label for="city[3]">Краснодар</label></li>
+                <li class="cities-item"><input type="radio" id="city[4]" name="city"> <label for="city[4]">Иркутск</label></li>
+                <li class="cities-item"><input type="radio" id="city[5]" name="city"> <label for="city[5]">Новосибирск</label></li>
+                <li class="cities-item"><input type="radio" id="city[6]" name="city"> <label for="city[6]">Санкт-Петербург</label></li>
+                <li class="cities-item"><input type="radio" id="city[7]" name="city"> <label for="city[7]">Улан-Удэ</label></li>
+                <li class="cities-item"><input type="radio" id="city[8]" name="city"> <label for="city[8]">Екатеринбург</label></li>
+            </ul>
+            <button class="close-button"></button>
+        </div>
+    </div>
         <div class="header-top">
             <div class="container container--flex">
                 <a href="#" class="header-top__city">Иркутск</a>
@@ -41,64 +58,66 @@
                 </div>
                 <div class="header-cart-block">
                     <a href="#" class="header-cart-block__ulogin"><img src="./images/ulogin.svg" alt="" width="23"></a>
+                    <div class="minicart-wrapper">
                     <a href="#" class="header-cart-block__minicart" id="header-cart-block__minicart">Моя корзина пуста</a>
-                    <div class="header-minicart-list" id="header-minicart-list">
+                    <div class="minicart-items" id="minicart-items">
                         <h2>Моя корзина</h2>
-                        <div class="minicart-list__item">
-                            <div class="minicart-list-img">
+                        <div class="minicart-item">
+                            <div class="minicart-item__img">
                                 <a href="#"><img src=" ./images/content/watch.jpg" width="100" alt=""></a>
                             </div>
-                            <div class="minicart-list-product">
-                                <span class="minicart-list-model">iPhone XS</span>
-                                <a href="#" class="minicart-list-title">Телефон Apple iPhone XS 128Gb apple...</a>
+                            <div class="minicart-item__header">
+                                <span class="minicart-item__model">iPhone XS</span>
+                                <a href="#" class="minicart-item__title">Телефон Apple iPhone XS 128Gb apple...</a>
                             </div>
-                            <span class="minicart-list-price">64 595 ₽</span>
-                            <a href="#" aria-label="Удалить товар" class="minicart-list-delete"></a>
+                            <span class="minicart-item__price">64 595 ₽</span>
+                            <a href="#" aria-label="Удалить товар" class="minicart-item__delete"></a>
                         </div>
-                        <div class="minicart-list__item">
-                            <div class="minicart-list-img">
+                        <div class="minicart-item">
+                            <div class="minicart-item__img">
                                 <a href="#"><img src="./images/content/watch.jpg" width="100" alt=""></a>
                             </div>
-                            <div class="minicart-list-product">
-                                <span class="minicart-list-model">iPhone XS</span>
-                                <a href="#" class="minicart-list-title">Телефон Apple iPhone XS 64Gb...</a>
+                            <div class="minicart-item__header">
+                                <span class="minicart-item__model">iPhone XS</span>
+                                <a href="#" class="minicart-item__title">Телефон Apple iPhone XS 64Gb...</a>
                             </div>
-                            <span class="minicart-list-price">64 595 ₽</span>
-                            <a href="#" aria-label="Удалить товар" class="minicart-list-delete"></a>
+                            <span class="minicart-item__price">64 595 ₽</span>
+                            <a href="#" aria-label="Удалить товар" class="minicart-item__delete"></a>
                         </div>
-                        <div class="minicart-list__item no-border">
-                            <div class="minicart-list-img">
+                        <div class="minicart-item no-border">
+                            <div class="minicart-item__img">
                                 <a href="#"><img src=" ./images/content/watch.jpg" width="100" alt=""></a>
                             </div>
-                            <div class="minicart-list-product">
-                                <span class="minicart-list-model">iPhone XS</span>
-                                <a href="#" class="minicart-list-title">Телефон Apple iPhone XS 64Gb...</a>
+                            <div class="minicart-item__header">
+                                <span class="minicart-item__model">iPhone XS</span>
+                                <a href="#" class="minicart-item__title">Телефон Apple iPhone XS 64Gb...</a>
                             </div>
-                            <span class="minicart-list-price">64 595 ₽</span>
-                            <a href="#" aria-label="Удалить товар" class="minicart-list-delete"></a>
+                            <span class="minicart-item__price">64 595 ₽</span>
+                            <a href="#" aria-label="Удалить товар" class="minicart-item__delete"></a>
                         </div>
-                        <div class="minicart-list-bottom">
-                            <a href="#" class="minicart-list-btn">Оформить заказ</a>
-                            <div class="minicart-list-total">
+                        <div class="minicart-items-bottom">
+                            <a href="#" class="minicart-btn">Оформить заказ</a>
+                            <div class="minicart-total">
                                 <span>На общую сумму:</span>
-                                <span class="minicart-total-price">64 595 ₽</span>
+                                <span class="minicart-total__price">64 595 ₽</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            </div>
         <div class="header-bottom">
             <div class="container">
                 <div class="header-bottom-container">
                     <a href="#" class="catalog-button" id="catalog-button">Каталог товаров</a>
                     <ul class="header-bottom__menu">
-                        <li><a href="#">Магазины</a></li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Б/у: покупка и продажа</a></li>
-                        <li><a href="#">Юридическим лицам</a></li>
-                        <li><a href="#">Бонусная система</a></li>
-                        <li><a href="#">Покупка в кредит</a></li>
+                        <li class="header-bottom__item"><a href="#" class="header-bottom__url">Магазины</a></li>
+                        <li class="header-bottom__item"><a href="#" class="header-bottom__url">Доставка и оплата</a></li>
+                        <li class="header-bottom__item"><a href="#" class="header-bottom__url">Б/у: покупка и продажа</a></li>
+                        <li class="header-bottom__item"><a href="#" class="header-bottom__url">Юридическим лицам</a></li>
+                        <li class="header-bottom__item"><a href="#" class="header-bottom__url">Бонусная система</a></li>
+                        <li class="header-bottom__item"><a href="#" class="header-bottom__url">Покупка в кредит</a></li>
                     </ul>
                     <a href="#" class="button-more" id="button-more" aria-label="Меню разделов сайта"></a>
                 </div>

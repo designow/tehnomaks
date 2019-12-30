@@ -8,25 +8,36 @@ document.addEventListener('DOMContentLoaded', function () {
     let button_more = selectTag('#button-more');
     let header_menu = selectTag('#header-menu');
     let container = selectTag('.container');
+    let close_button = selectTag('.close-button');
+    let cities_container = selectTag('.cities-container');
+    let city_select = selectTag('.header-top__city');
+    let warehouse_show = selectTag('.product-price-block__warehouse');
+    let overlay_div = selectTag('.overlay');
+    let warehouses_block = selectTag('.warehouses-block');
+    let warehouses_close = selectTag('.warehouses-product__close');
 
     function selectTag(name) {
         return document.querySelector(name);
     }
 
-    catalog_button.addEventListener('click', function (evt) {
-        catalog_block.classList.toggle('catalog-block--show');
-    });
+    function toggle(elemName, elemTarget, tagName, elemAction) {
+        elemName.addEventListener(elemAction, function (evt) {
+            elemTarget.classList.toggle(tagName);
+        });
+    }
 
-    button_more.addEventListener('click', function (evt) {
-        header_menu.classList.toggle('header-menu--show');
-    });
+    toggle(catalog_button, catalog_block, 'catalog-block--show', 'click');
+    toggle(button_more, header_menu, 'header-menu--show', 'click');
+    toggle(close_button, cities_container, 'cities-container--show', 'click');
+    toggle(city_select, cities_container, 'cities-container--show', 'click');
+    toggle(warehouse_show, overlay_div, 'overlay--show', 'click');
+    toggle(overlay_div, overlay_div, 'overlay--show', 'click');
+    toggle(overlay_div, warehouses_block, 'warehouses-block--show', 'click');
+    toggle(warehouse_show, warehouses_block, 'warehouses-block--show', 'click');
+    toggle(warehouses_close, warehouses_block, 'warehouses-block--show', 'click');
+    toggle(warehouses_close, overlay_div, 'overlay--show', 'click');
 
-    block_minicart.addEventListener('click', function (evt) {
-        block_minicart.classList.toggle('header-cart-block__minicart--show');
-        minicart_list.classList.toggle('header-minicart-list--show');
-    });
-
-    //Задаем выоту меню
+    //Задаем выcоту меню
 
     var menuHeight = catalog_block.getBoundingClientRect().height;
     var subMenu = document.querySelectorAll('.catalog-submenu');
@@ -36,7 +47,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
-
-    
-
-    
