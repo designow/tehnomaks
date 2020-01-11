@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let overlay_div = selectTag('.overlay');
     let warehouses_block = selectTag('.warehouses-block');
     let warehouses_close = selectTag('.warehouses-product__close');
+    let price_filter_button = selectTag('.price-sorting-filter');
+    let filter_block = selectTag('.price-filter-container');
 
     function selectTag(name) {
         return document.querySelector(name);
@@ -30,12 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle(button_more, header_menu, 'header-menu--show', 'click');
     toggle(close_button, cities_container, 'cities-container--show', 'click');
     toggle(city_select, cities_container, 'cities-container--show', 'click');
-    toggle(warehouse_show, overlay_div, 'overlay--show', 'click');
-    toggle(overlay_div, overlay_div, 'overlay--show', 'click');
-    toggle(overlay_div, warehouses_block, 'warehouses-block--show', 'click');
-    toggle(warehouse_show, warehouses_block, 'warehouses-block--show', 'click');
-    toggle(warehouses_close, warehouses_block, 'warehouses-block--show', 'click');
-    toggle(warehouses_close, overlay_div, 'overlay--show', 'click');
+    
+    if(price_filter_button){   
+        toggle(price_filter_button, filter_block, 'price-filter-container--show', 'click');
+    }
+
+    if(overlay_div){
+        toggle(warehouse_show, overlay_div, 'overlay--show', 'click');
+        toggle(overlay_div, overlay_div, 'overlay--show', 'click');
+        toggle(overlay_div, warehouses_block, 'warehouses-block--show', 'click');
+        toggle(warehouse_show, warehouses_block, 'warehouses-block--show', 'click');
+        toggle(warehouses_close, warehouses_block, 'warehouses-block--show', 'click');
+        toggle(warehouses_close, overlay_div, 'overlay--show', 'click');
+    }
+    
 
     //Задаем выcоту меню
 
