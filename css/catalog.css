@@ -475,12 +475,12 @@
     display: none;
 }
 
-.pages{
+.pages {
     display: flex;
     justify-content: flex-start;
 }
 
-.pages__item{
+.pages__item {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -493,8 +493,9 @@
     margin-right: 10px;
 }
 
-.pages__item:hover, .pages__item:focus, .pages__item--active{
+.pages__item:hover,
+.pages__item:focus,
+.pages__item--active {
     background-color: #e20714;
     color: #ffffff;
 }
-

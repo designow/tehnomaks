@@ -21,12 +21,12 @@ include modules/header
         <div class="container">
             <div class="brand-block">
                 <ul class="brand-list">
-                    <li><a href="#">Asus</a></li>
-                    <li><a href="#">Apple</a></li>
-                    <li><a href="#">Xiaomi</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Honor</a></li>
-                    <li><a href="#">Huawei</a></li>
+                    <li class="brand-list__item"><a href="#" class="brand-list__url">Asus</a></li>
+                    <li class="brand-list__item"><a href="#" class="brand-list__url">Apple</a></li>
+                    <li class="brand-list__item"><a href="#" class="brand-list__url">Xiaomi</a></li>
+                    <li class="brand-list__item"><a href="#" class="brand-list__url">Samsung</a></li>
+                    <li class="brand-list__item"><a href="#" class="brand-list__url">Honor</a></li>
+                    <li class="brand-list__item"><a href="#" class="brand-list__url">Huawei</a></li>
                 </ul>
                 <a href="#"><img src="./images/slider-horizontal/trade-in.jpg" alt="" class="brands-block-banner"></a>
             </div>
@@ -140,34 +140,34 @@ include modules/header
                 <div class="social-list">
                     <img src="./images/content/social.jpg" alt="">
                 </div>
-                <div class="newslist-block">
-                    <h2>Новости</h2>
+                <section class="newslist-block">
+                    <h2 class="newslist-block__heading">Новости</h2>
                     <ul class="newslist">
-                        <li><a href="#">4 преимущества трейд-ин в Техномаксе</a></li>
-                        <li><a href="#">Майская распродажа в Техномаксе</a></li>
-                        <li><a href="#">Майская распродажа</a></li>
-                        <li><a href="#">Ноутбуки</a></li>
-                        <li><a href="#">Скидка 5%</a></li>
-                        <li><a href="#">Черная пятница</a></li>
+                        <li class="newslist__item"><a href="#" class="newslist__url">4 преимущества трейд-ин в Техномаксе</a></li>
+                        <li class="newslist__item"><a href="#" class="newslist__url">Майская распродажа в Техномаксе</a></li>
+                        <li class="newslist__item"><a href="#" class="newslist__url">Майская распродажа</a></li>
+                        <li class="newslist__item"><a href="#" class="newslist__url">Ноутбуки</a></li>
+                        <li class="newslist__item"><a href="#" class="newslist__url">Скидка 5%</a></li>
+                        <li class="newslist__item"><a href="#" class="newslist__url">Черная пятница</a></li>
                     </ul>
-                    <a href="#" class="newslist-url">Лента новостей</a>
-                </div>
+                    <a href="#" class="newslist__more">Лента новостей</a>
+                </section>
             </div>
         </div>
         <!-- /Социальные сети и список новостей -->
         <div class="orange-background">
             <div class="container">
                 <div class="feedback-block">
-                    <div class="feedback-heading">
-                        <h2>Будь в курсе последних акций и предложений</h2>
-                        <p>Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
+                    <div class="feedback-header">
+                        <h2 class="feedback-header__heading">Будь в курсе последних акций и предложений</h2>
+                        <p class="feedback-header__text">Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
                     </div>
                     <div class="feedback-form">
                         <form action="#" method="post">
                             <input type="text" class="feedback-form-email" placeholder="Введите ваш email"> <button class="feedback-form-button">Подписаться</button>
-                            <div class="feedback-label-block">
+                            <div class="feedback-check-block">
                                 <input type="checkbox" id="subscribe">
-                                <label for="subscribe">Я согласен с уловиями подписки</label>
+                                <label for="subscribe" class="feedback-check-block__label">Я согласен с уловиями подписки</label>
                             </div>
                         </form>
                     </div>

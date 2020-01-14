@@ -270,7 +270,7 @@ a:hover {
     columns: 200px auto;
 }
 
-.cities-item {
+.cities-items__item {
     color: #ffffff;
     margin-bottom: 15px;
 }
@@ -466,7 +466,7 @@ a:hover {
     right: 80px;
 }
 
-.minicart-items h2 {
+.minicart-items__heading {
     margin: 20px;
 }
 
@@ -1197,22 +1197,22 @@ a:hover {
     margin: 0;
 }
 
-.brand-list li {
+.brand-list__item {
     border-right: 1px solid #cccccc;
     width: calc(100%/6);
     text-align: center;
 }
 
-.brand-list li a {
+.brand-list__url {
     color: #333;
     text-decoration: none;
 }
 
-.brand-list li a:hover {
+.brand-list__url:hover {
     color: #e20714;
 }
 
-.brand-list li:last-child {
+.brand-list__item:last-child {
     border-right: none;
 }
 
@@ -1353,7 +1353,8 @@ a:hover {
     flex-direction: column;
 }
 
-.product-card a {
+.product-card-title,
+.product-card-cart {
     text-decoration: none;
     color: #333;
 }
@@ -1474,7 +1475,7 @@ a:hover {
     max-width: 270px;
 }
 
-.newslist-block h2 {
+.newslist-block__heading {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 40px;
@@ -1487,20 +1488,20 @@ a:hover {
     list-style: none;
 }
 
-.newslist li {
+.newslist__item {
     margin-bottom: 25px;
 }
 
-.newslist li a {
+.newslist__url {
     color: #333333;
     text-decoration: none;
 }
 
-.newslist li a:hover {
+.newslist__urla:hover {
     color: #e95a0c;
 }
 
-.newslist-url {
+.newslist__more {
     color: #e95a0c;
     text-decoration: none;
 }
@@ -1522,21 +1523,21 @@ a:hover {
     width: 100%;
 }
 
-.feedback-heading {
+.feedback-header {
     max-width: 400px;
     padding-bottom: 20px;
 }
 
-.feedback-heading h2 {
+.feedback-header__heading {
     margin-top: 0;
 }
 
-.feedback-heading p {
+.feedback-header__text {
     font-size: 14px;
     line-height: 160%;
 }
 
-.feedback-label-block {
+.feedback-check-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1547,7 +1548,7 @@ a:hover {
     align-items: center;
 }
 
-.feedback-label-block label {
+.feedback-check-block__label {
     margin-left: 10px;
     font-size: 14px;
 }

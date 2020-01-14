@@ -122,7 +122,8 @@
     .catalog-submenu__block {
         width: 50%;
     }
-    .price-filter-container--show{
+
+    .price-filter-container--show {
         display: block;
     }
 }
