@@ -216,6 +216,7 @@
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 
@@ -333,6 +334,14 @@
 
     .feedback-label-block {
         margin-left: 50px;
+    }
+
+    .product-articles-item {
+        flex-direction: column;
+    }
+
+    .product-articles__text {
+        width: 100%;
     }
 }
 
